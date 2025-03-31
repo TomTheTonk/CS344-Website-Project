@@ -10,69 +10,9 @@ Scenario
 
 Your supervisor has assigned you to develop a website on a specific topic that can serve as an internal resource in your organization for employees to consult if they have questions about that topic. The site should provide reasonably comprehensive coverage of the chosen topic.
 
-Topics
+Topic: Outsourcing of jobs
 
-Your team will choose a topic from the following list. Topics will be allocated on a first-come-first-served basis. While there is some overlap in some of the topic areas, *no two groups may have the same topic*. Note: You may also develop a website or revamp an existing not-for-profit organization website -- upon approval of the instructor.
-
-> Building Online Communities (Especially for students, like yourselves)
-
-1.  Building buy-in
-
-2.  Recommended technology and engagement plans that work
-
-3.  Setting goals and key performance indicators (KPIs) to measure success
-
-4.  Built for engagement: Plan to Find, connect, collaborate
-
-5.  Prepare for online community moderation
-
-> Society/Business Topics
-
-1.  Corporate Accountability
-
-2.  Corporate Crime
-
-3.  Battling Sweat Shops
-
-4.  Socially Responsible Investing
-
-5.  Outsourcing of Jobs
-
-6.  Health & Safety in the workplace
-
-7.  Ergonomics
-
-> Human Resources Topics
-
-1.  Sex discrimination
-
-2.  Race discrimination
-
-3.  Ageism
-
-4.  Employee Monitoring
-
-5.  Online Bullying and Harassment issues
-
-6.  Web accessibility
-
-7.  Internet addiction
-
-8.  Maintain the Work-life balance
-
-> Environmental Topics
-
-1.  Corporate Environmentalism
-
-2.  Environmental impacts of production, use, and disposal of IT Hardware
-
-3.  Environmental impacts of Telecommuting
-
-4.  Energy use and Business-to-Consumer E-Commerce
-
-5.  Green Business
-
-Teams
+Teams:
 
 This is a team project consisting of 3 to 4 members. I suggest you assign tasks to your group members, make deadlines, make progress charts etc. (helpful document: <http://www.gotomedia.com/downloads/goto_stage.pdf> )
 
