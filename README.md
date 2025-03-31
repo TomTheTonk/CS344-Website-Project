@@ -1,4 +1,5 @@
 **CS 344 Final Project**
+**Outsourcing of Jobs**
 
 As a requirement for your Final Project Web Site, the site you create for this class must be hosted on an Internet-accessible web server. A major reason for this is that you get experience in uploading and maintaining a \"real\" website.
 
