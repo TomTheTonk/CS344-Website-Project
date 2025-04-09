@@ -29,6 +29,7 @@
     min-height: 100%;
     display: block;
     margin-left: 300px;
+    padding: 10px;
 }
 .nav-content {
     max-width: unset;
@@ -56,3 +57,6 @@ section {
     background: #fcfcfc;
     min-height: 100%;
 }
+
+
+

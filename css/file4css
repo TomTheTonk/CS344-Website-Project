@@ -1,0 +1,90 @@
+/*Link stuff */
+.P4Links {
+    color: lightgreen;
+}
+
+.P4Link {
+    color: black;
+}
+
+/*Stuff for form*/
+.form {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* Paragraph before grid stuff*/
+
+.ContactInfoHeader {
+    padding: 5px;
+    margin-bottom: 0px;
+    background-color: black;
+    color: white;
+}
+/* Grid seciton in form*/
+.gridSection {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 3px solid black;
+ 
+}
+
+
+div .ContactDiv {
+    padding: 5px;
+    
+}
+
+.ContactDiv{
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+/*Paragraph before Form Seciton */
+.HeadFormThing {
+    padding: 5px;
+    margin-bottom: 0px;
+    background-color: black;
+    color: white;
+    
+}
+
+/*Form Seciton stuff */
+.FormPara {
+    border: 3px solid black;
+}
+
+label {
+    padding: 5px;
+    margin-top: 5px;
+    display: block;
+}
+
+input {
+    padding: 5px;
+ 
+    margin-bottom: 10px;
+}
+/* Description Input box*/
+.DescriptionInputBox{
+    padding: 5px;
+}
+
+
+form input[type="submit"] {
+    background-color: lightpink;
+    padding: 7px;
+    margin-top: 8px;
+}
+
+form input[type="submit"]:hover {
+    background-color: lightgreen;
+}
+
+/*THis is the footer section of css */
+footer {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
