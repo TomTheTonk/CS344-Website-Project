@@ -38,11 +38,12 @@ div .ContactDiv {
 }
 
 .ContactDiv{
-    background-color: lightblue;
+    background-color: rgb(173, 216, 230, 0.6);
     border: 1px solid black;
 }
 
 .ContactDiv p {
+    color: black;
     font-weight: bold;
     padding-left: 4px;
 }
@@ -59,9 +60,11 @@ div .ContactDiv {
 /*Form Seciton stuff */
 .FormPara {
     border: 3px solid black;
+    background-color: rgb(173, 216, 230, 0.6);
 }
 
 label {
+    color: black;
     font-size: 15px;
     font-weight: bold;
     padding: 5px;
