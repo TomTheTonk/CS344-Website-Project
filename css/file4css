@@ -9,6 +9,7 @@
 
 /*Stuff for form*/
 .form {
+    background-color: lightgray;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -41,6 +42,11 @@ div .ContactDiv {
     border: 1px solid black;
 }
 
+.ContactDiv p {
+    font-weight: bold;
+    padding-left: 4px;
+}
+
 /*Paragraph before Form Seciton */
 .HeadFormThing {
     padding: 5px;
@@ -56,6 +62,8 @@ div .ContactDiv {
 }
 
 label {
+    font-size: 15px;
+    font-weight: bold;
     padding: 5px;
     margin-top: 5px;
     display: block;
@@ -63,8 +71,13 @@ label {
 
 input {
     padding: 5px;
- 
+    width: 50%;
+    max-width: 50%;
     margin-bottom: 10px;
+}
+
+form input[class="submit"] {
+    width: 30%;
 }
 /* Description Input box*/
 .DescriptionInputBox{
@@ -85,6 +98,7 @@ form input[type="submit"]:hover {
 /*THis is the footer section of css */
 footer {
     padding: 10px;
+    border: 3px solid lightgray;
     background-color: black;
     color: white;
 }
