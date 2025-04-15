@@ -3,6 +3,9 @@
     width: 100%;
     height: 100%;
 }
+body{
+    margin: 0;
+}
 .logo{
     height: 100px;
     width: 100px;
@@ -23,12 +26,6 @@
     z-index: 200;
 }
 
-.nav-content-wrap {
-    margin-left: 300px;
-    background: #fcfcfc;
-    min-height: 100%;
-    display: block;
-}
 
 .nav-content {
     max-width: unset;
@@ -45,7 +42,6 @@ section {
 }
 
 .nav-content-wrap {
-    margin-left: 0;
     font-size: 16px;
     color: black;
     box-sizing: border-box;
@@ -53,6 +49,7 @@ section {
     margin-left: 300px;
     background: #fcfcfc;
     min-height: 100%;
+
 }
 .nav-link{
     color: white;
@@ -96,4 +93,34 @@ section {
  
  display: flex;
  justify-self: center;
+}
+.nav-content-wrap{
+    color: #343131;
+}
+.nav-content-wrap div{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.content-banner{
+    background: hsla(180, 100%, 30%, 1);
+
+    background: linear-gradient(225deg, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+    background: -moz-linear-gradient(225deg, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+    background: -webkit-linear-gradient(225deg, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#009999", endColorstr="#009999", GradientType=1 );
+    width: 100%;         
+    height: 100px;      
+    margin: 20px 0;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    
+}
+.content-header{
+    text-align: center;
+    padding-top: 1em;
+    
 }
