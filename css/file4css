@@ -1,15 +1,12 @@
+body {
+    background-color: #343131;
+}
 /*Link stuff */
-.P4Links {
-    color: lightgreen;
-}
 
-.P4Link {
-    color: black;
-}
 
 /*Stuff for form*/
-.form {
-    background-color: lightgray;
+#formID {
+    background-color:#009999;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
@@ -38,7 +35,7 @@ div .ContactDiv {
 }
 
 .ContactDiv{
-    background-color: rgb(173, 216, 230, 0.6);
+    background-color: white;
     border: 1px solid black;
 }
 
@@ -59,10 +56,16 @@ div .ContactDiv {
 
 /*Form Seciton stuff */
 .FormPara {
+   
     border: 3px solid black;
-    background-color: rgb(173, 216, 230, 0.6);
+    background-color: white;
 }
-
+/*
+.formDiv{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+*/
 label {
     color: black;
     font-size: 15px;
@@ -81,6 +84,7 @@ input {
 
 form input[class="submit"] {
     width: 30%;
+    display: block;
 }
 /* Description Input box*/
 .DescriptionInputBox{

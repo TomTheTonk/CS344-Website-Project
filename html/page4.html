@@ -31,7 +31,7 @@
 
   <section class="nav-content-wrap">
       <!--Use an id, as a class returns a collection instead of 1 single unique element-->
-        <form id="formID" class="form" method="post" action="https://www.randyconnolly.com/tests/process.php">
+        <form id="formID" target="_blank" action="https://www.randyconnolly.com/tests/process.php" method="post" >
             
             <fieldset>
               <h1 class="ContactInfoHeader"> Contact Info</h1>
@@ -42,13 +42,17 @@
                 <p>Cole Graves</p>
                 <p>Dept: Boss</p>
                 <p>Phone Number: 580-343-3284 </p>
-                <p>Email: <a class="P4Link"  href="https://www.w3schools.com">Email</a></p>
+                <p>Email: 
+                  <a href="https://www.w3schools.com/tags/att_a_href.asp">w3schools</a>
+                </p>
               </div>
               <div class="ContactDiv">
               <p>Cole Graves</p>
               <p>Dept: HR</p>
               <p>Phone Number: 580-343-3284 </p>
-              <p>Email: <a class="P4Link"  href="https://www.w3schools.com">Email</a></p>
+              <p>Email: 
+                <a href="https://www.w3schools.com">Email</a>
+              </p>
               </div>
               <div class="ContactDiv">
                <p>Cole Graves</p>
@@ -67,15 +71,23 @@
               <p class="HeadFormThing"><b>Need Something Else? Submit a complaint below</b></p>
 
                 <section class="FormPara">
+                  <div class="formDiv">
                     <label> Customer Info </label>
                     <input type="text" name="Client" placeholder="Enter Name">
+                  </div>
+                  <div class="formDiv">
                     <label> Address </label>
                     <input type="text" name="Address" placeholder="Enter Address">
+                  </div>
+                  <div class="formDiv">
                     <label> Phone Number </label>
                     <input type="text" name="Contact: Phone Number" placeholder="Enter Phone Number (Optional)">
+                  </div>
+                  <div class="formDiv">
                     <label> Personal Email </label>
                     <input type="text" name="Contact: Email" placeholder="Enter Email">
-
+                  </div>
+                  <div class="formDiv">
                     <label> Department</label>
                     <select name="Department">
                            <option>None</option>
@@ -84,6 +96,7 @@
                            <option>Boss</option>
                            <option>HR</option>
                     </select>
+                  </div>
                     <!-- 
                     <label>Status</label>
                     <input type="radio" name="type" value="Pending "> Pending
