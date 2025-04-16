@@ -21,11 +21,13 @@ a:hover {
     color: white;
 }
 /* Grid seciton in form*/
-.gridSection {
+
+#gridSection {
     display: grid;
     grid-template-columns: auto auto;
     border: 3px solid black;
 }
+    
 
 div .ContactDiv {
     padding: 5px;
@@ -35,12 +37,14 @@ div .ContactDiv {
 .ContactDiv{
     background-color: #FAF9F6;
     border: 1px solid black;
+   
 }
 
 .ContactDiv p {
     color: black;
     font-weight: bold;
     padding-left: 4px;
+    display: block;
 }
 
 /*Paragraph before Form Seciton */

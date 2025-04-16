@@ -1,8 +1,4 @@
-.grid-for-nav {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+
 body{
     margin: 0;
 }
@@ -57,7 +53,6 @@ section {
 .side-nav-search{
     background-color: white;
     color: #343131;
-
 }
 .side-nav-search h1 {
     text-align: center;
