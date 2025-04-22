@@ -166,7 +166,7 @@ section {
 
 
 .toggle-button {
-    background-color: none;
+    background: none;
     color: white;
     border: none;
     padding: 10px 15px;
