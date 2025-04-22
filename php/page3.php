@@ -1,8 +1,12 @@
 <html>
 
-<head>
+<head> 
+  <link rel="stylesheet" type="text/css" href="../css/page3.css">
   <link rel="stylesheet" type="text/css" href="../css/root.css">
   <title>Job Search</title>
+  <meta name="description" content="Discover wonderful business partners to help your business run smoother and improve productivity.">
+  <meta name="keywords" content="outsource, out source, ">
+  <meta name="author" content="Allen Martin">
 </head>
 
 <body>
@@ -35,21 +39,21 @@
     </header>
     <div class="content-header">
         <div>
-            <form>
-                <input type="text" id="search-bar">
-                <input type="submit" id="submit-button">
+            <form action="" mehod="get">
+                <input type="text" class="job-search-box" name="job-keyword">
+                <input type="submit" class="search-submit">
             </form>
         </div>
 
     </div>
-    <div class="content">
+    <div class="jobs-content">
         <ul class="jobs-list">
             <?php
             $xml = simplexml_load_file("../xml/job_data.xml") or die("Error: Not Working");
             foreach($xml as $jobData) {
-                echo '<li> <div>';
-                echo '<div class\'job-header\'><div class=\'job-title\'>' . $jobData->TITLE . '</div>';
-                echo '<a href=\'#\'>' . $jobData->COMPANY . '</a><br>';
+                echo '<li class=\'job-details\'> <div class=\'jobs-body\'>';
+                echo '<div class=\'job-header\'><div class=\'job-title\'>' . $jobData->TITLE . '</div>';
+                echo '<a href=\'#\' class=\'company-link\'>' . $jobData->COMPANY . '</a><br>';
                 echo $jobData->CITY . ', ' . $jobData->STATE . '</div>';
                 echo '<div class=\'job-section\'><div class=\'section-header\'>Job Details</div><div class=\'sub-section-header\'>Pay</div>' . $jobData->SALARY . '<div class=\'sub-section-header\'>Job Type</div>' . $jobData->TYPE . '</div>';
                 echo '<div class=\'job-section\'><div class=\'section-header\'>Full Job Description</div><div class=\'description-header\'>' . $jobData->TITLE . '</div>' . $jobData->DESCRIPTION . '<div class=\'description-header\'>Responsibilities</div><ul class=\'description-list\'>';
