@@ -31,7 +31,7 @@
   <section class="nav-content-wrap">
 
     <header class="content-banner">
-                
+    <button id="toggleNav" class="toggle-button">☰</button>    
     </header>
     <div class="content-header">
         <div>
@@ -74,7 +74,7 @@
 
 
 
-
+  <script src="../js/toggleNav.js"></script>
 </body>
 
 </html>
