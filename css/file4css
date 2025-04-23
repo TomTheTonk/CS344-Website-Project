@@ -1,7 +1,7 @@
 
 /*Link stuff */
 a:hover {
-    color: darkblue;
+    color: red;
 }
 a {
     color: black;
@@ -15,6 +15,10 @@ a {
     padding-bottom: 0px;
 }
 
+.HeadFormThing {
+    text-align: center;
+}
+
 
 /* Paragraph before grid stuff*/
 
@@ -25,14 +29,16 @@ a {
     color: white;
 }
 /* Grid seciton in form*/
-
 #gridSection {
     display: grid;
     grid-template-columns: auto auto;
     border: 3px solid black;
 }
     
-
+/*Contact info stuff */
+.ContactInfoHeader {
+    text-align: center;
+}
 div .ContactDiv {
     padding: 5px;
     
