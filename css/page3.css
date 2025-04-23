@@ -1,0 +1,115 @@
+.nav-content-wrap .companys-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-content-wrap div.companys-content * {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-content-wrap div.companys-content .company-header {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.nav-content-wrap div.companys-content .company-section {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.companys-content {
+    
+    padding: none;
+    --section-padding: .5em;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.companys-content .companys-list {
+    padding-left: 0;
+}
+
+.companys-list {
+    list-style-type: none;
+    margin-top: 0;
+}
+
+.company-details {
+    border-style: solid;
+    border-radius: 2em;
+    padding-bottom: .25em;
+    width: 41.5%;
+}
+
+.left {
+    margin-left: 5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.right {
+    margin-left: 2.5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.company-header {
+    font-size: 1.15em;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.company-link {
+    color: #343131;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.company-link:hover {
+    color: blue;
+}
+
+.company-section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    border-top: solid;
+}
+
+.section-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: .35em;
+}
+
+.sub-section-header {
+    font-weight: bold;
+    color: #84807F;
+    padding-bottom: .2em;
+}
+
+.section-body {
+    padding-top: .25em;
+}
+
+.checked {
+    color: orange;
+}
+
+.service-section-header {
+    font-weight: bold;
+    color: #84807F;
+    padding-top: .2em;
+    font-size: 1.1em
+}
+
+.no-bullet {
+    list-style-type: none;
+}
+
+.service-sub {
+    list-style-position: inside;
+}
