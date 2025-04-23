@@ -3,8 +3,10 @@
 <head> 
   <link rel="stylesheet" type="text/css" href="../css/page3.css">
   <link rel="stylesheet" type="text/css" href="../css/root.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Company Search</title>
+
   <meta name="description" content="Discover wonderful business partners to help your business run smoother and improve productivity.">
   <meta name="keywords" content="outsource, out source, ">
   <meta name="author" content="Allen Martin">
@@ -41,7 +43,10 @@
     <div class="content-header">
         <div>
             <form action="" mehod="get">
+
                 <input type="text" class="company-search-box" name="company-keyword">
+
+
                 <input type="submit" class="search-submit">
             </form>
         </div>
@@ -70,6 +75,7 @@
                     } else {
                         echo'<span class=\'fa fa-star\'></span>';
                     }
+
                 }
                 echo ' ' . $company_data->RATING . ' (' . $company_data->REVIEWS . ')</div>';
                 echo '</div>';
