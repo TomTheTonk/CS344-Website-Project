@@ -1,8 +1,12 @@
 
 /*Link stuff */
 a:hover {
-    color: lightgreen;
+    color: darkblue;
 }
+a {
+    color: black;
+}
+
 
 /*Stuff for form*/
 #formID {
@@ -100,6 +104,7 @@ form input[type="submit"] {
     margin-top: 8px;
 }
 
+
 form input[type="submit"]:hover {
     background-color: lightgreen;
 }
@@ -109,5 +114,12 @@ footer {
     padding: 10px;
     border: 3px solid lightgray;
     background-color: black;
+    color: white;
+}
+
+footer a:hover {
+    color: lightgreen;
+}
+footer a {
     color: white;
 }

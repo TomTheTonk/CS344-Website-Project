@@ -34,7 +34,7 @@
 
   <section class="nav-content-wrap">
       <!--Use an id, as a class returns a collection instead of 1 single unique element-->
-        <form id="formID" target="_blank" action="../php/base.php" method="post" >
+        <form id="formID" target="_blank" action="../js/base.js" method="post" >
             
             <fieldset>
               <h1 class="ContactInfoHeader"> Contact Info</h1>
@@ -114,7 +114,8 @@
                     </div>
                   
                     <div class="formDiv"> 
-                      <input class="submit" type="submit">
+                      <input class="submit" type="submit" onclick="myFunction()">
+                      
                     </div>
                       
                 </section>
@@ -136,5 +137,11 @@
 
 
 </body>
+
+<script>
+  function myFunction() {
+    window.location.href="http://127.0.0.1:5500/html/submitted.html";  
+  }
+</script>
 
 </html>
