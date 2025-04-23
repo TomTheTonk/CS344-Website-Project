@@ -1,0 +1,115 @@
+<COMPANY_DATA>
+    <COMPANY>
+        <NAME>Nexora Solutions</NAME>
+        <CITY>Austin</CITY>
+        <STATE>TX</STATE>
+        <RATING>4.7</RATING>
+        <REVIEWS>1,284</REVIEWS>
+        <PITCH>At Nexora Solutions, we empower companies to scale efficiently by delivering high-quality, outsourced business and technical services with precision and reliability. Whether you're a startup needing technical support or a growing enterprise looking to offload operations, Nexora is your trusted partner. With over a decade of experience and a global team of experts, we help you focus on growth while we handle the grind.
+            We combine cutting-edge tools, deep industry knowledge, and seamless communication to ensure every project is executed with excellence.</PITCH>
+            Nexora: Delivering tomorrow, today.
+        <SERVICES>
+            <SERVICE>
+                <MAIN>Software Development</MAIN>
+                <SUB>Web and Mobile App Development
+                    Custom Enterprise Software
+                    API Integration and Automation</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>IT Support and Cloud Services</MAIN>
+                <SUB>Help Desk Solutions
+                    Cloud Migration
+                    Infrastructure Management</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Data and Analytics</MAIN>
+                <SUB>Data Entry and Cleansing
+                    Business Intelligence Reporting
+                    Database Management</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Digital Marketing</MAIN>
+                <SUB>SEO and SEM Campaigns
+                    Social Media Management
+                    Email Marketing Automation</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Customer Service Outsourcing</MAIN>
+                <SUB>Live Chat and Email Support
+                    Inbound/Outbound Call Centers
+                    Multilingual Support Teams</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Administrative Support</MAIN>
+                <SUB>Virtual Assistants
+                    Scheduling and Calendar Management
+                    Document Formatting and Transcription</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$1,200/month</COST_PLAN>
+    </COMPANY>
+    <COMPANY>
+        <NAME>ForgeLink Manufacturing Group</NAME>
+        <CITY>Columbus</CITY>
+        <STATE>OH</STATE>
+        <RATING>4.9</RATING>
+        <REVIEWS>876</REVIEWS>
+        <PITCH>ForgeLink Manufacturing Group is a premier outsourced manufacturing partner trusted by startups and Fortune 500 companies alike. We specialize in high-precision, scalable production for industries that demand quality, consistency, and speed. From prototyping to full-scale assembly, we take your concept and make it a reality—on time, on budget, and beyond expectations.
+            With state-of-the-art facilities and ISO-certified processes, ForgeLink delivers unmatched reliability and a level of craftsmanship that sets your product apart.
+            Built with precision. Delivered with pride.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>CNC Machining and Precision Parts</MAIN>
+                <SUB>Aluminum, Steel, Titanium Components
+                    Rapid Prototyping
+                    Custom Tooling and Fixtures</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Plastic Injection Molding</MAIN>
+                <SUB>Custom Mold Design
+                    Mass Production Runs
+                    Post-Mold Assembly</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Metal Fabrication</MAIN>
+                <SUB>Laser Cutting, Welding, and Bending
+                    Sheet Metal Enclosures
+                    Powder Coating and Finishing</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Electronics Assembly</MAIN>
+                <SUB>PCB Soldering and Testing
+                    Cable Harness Manufacturing
+                    Box Build and Final Assembly</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Packaging and Logistics</MAIN>
+                <SUB>Custom Packaging Solutions
+                    Bulk Shipping Coordination
+                    Inventory Warehousing</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Quality Control and Testing</MAIN>
+                <SUB>ISO 9001:2015 Certified
+                    Full QA Audits and Inspections
+                    Material Compliance Reports</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$2,500/project</COST_PLAN>
+    </COMPANY>
+    <COMPANY>
+        <NAME></NAME>
+        <CITY></CITY>
+        <STATE></STATE>
+        <RATING></RATING>
+        <REVIEWS></REVIEWS>
+        <PITCH></PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN></MAIN>
+                <SUB></SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN></COST_PLAN>
+    </COMPANY>
+</COMPANY_DATA>
