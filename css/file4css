@@ -1,0 +1,109 @@
+
+/*Link stuff */
+
+
+/*Stuff for form*/
+#formID {
+    background-color:#009999;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+/* Paragraph before grid stuff*/
+
+.ContactInfoHeader {
+    padding: 5px;
+    margin-bottom: 0px;
+    background-color: black;
+    color: white;
+}
+/* Grid seciton in form*/
+.gridSection {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 3px solid black;
+ 
+}
+
+
+div .ContactDiv {
+    padding: 5px;
+    
+}
+
+.ContactDiv{
+    background-color: #FAF9F6;
+    border: 1px solid black;
+}
+
+.ContactDiv p {
+    color: black;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+/*Paragraph before Form Seciton */
+.HeadFormThing {
+    padding: 5px;
+    margin-bottom: 0px;
+    background-color: black;
+    color: white;
+    
+}
+
+/*Form Seciton stuff */
+.FormPara {
+   
+    border: 3px solid black;
+    background-color: #FAF9F6;
+}
+/*
+.formDiv{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+*/
+label {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    display: block;
+}
+
+input {
+    padding: 5px;
+    width: 50%;
+    max-width: 50%;
+    margin-bottom: 10px;
+}
+
+form input[class="submit"] {
+    width: 30%;
+    display: block;
+}
+/* Description Input box*/
+.DescriptionInputBox{
+    padding: 5px;
+}
+
+
+form input[type="submit"] {
+    background-color: lightpink;
+    padding: 7px;
+    margin-top: 8px;
+}
+
+form input[type="submit"]:hover {
+    background-color: lightgreen;
+}
+
+/*THis is the footer section of css */
+footer {
+    padding: 10px;
+    border: 3px solid lightgray;
+    background-color: black;
+    color: white;
+}
