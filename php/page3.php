@@ -3,7 +3,10 @@
 <head> 
   <link rel="stylesheet" type="text/css" href="../css/page3.css">
   <link rel="stylesheet" type="text/css" href="../css/root.css">
-  <title>Job Search</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Company Search</title>
+
   <meta name="description" content="Discover wonderful business partners to help your business run smoother and improve productivity.">
   <meta name="keywords" content="outsource, out source, ">
   <meta name="author" content="Allen Martin">
@@ -25,7 +28,7 @@
             <li class="nav-list"><a class="nav-link" href="../html/home.html">Home</a></li>
                 <li class="nav-list"><a class="nav-link" href="../html/page1.html">Our Approach to Outsourcing</a></li>
                 <li class="nav-list"><a class="nav-link" href="../html/page2.html">FAQ</a></li>
-                <li class="nav-list"><a class="nav-link" href="page3.php">Job Search</a></li>
+                <li class="nav-list"><a class="nav-link" href="page3.php">Company Search</a></li>
                 <li class="nav-list"><a class="nav-link" href="../html/page4.html">Contact Us</a></li>
             </ul>
 
@@ -35,41 +38,69 @@
   <section class="nav-content-wrap">
 
     <header class="content-banner">
-                
+        <button id="toggleNav" class="toggle-button">☰</button> 
     </header>
     <div class="content-header">
         <div>
             <form action="" mehod="get">
-                <input type="text" class="job-search-box" name="job-keyword">
+
+                <input type="text" class="company-search-box" name="company-keyword">
+
+
                 <input type="submit" class="search-submit">
             </form>
         </div>
 
     </div>
-    <div class="jobs-content">
-        <ul class="jobs-list">
+    <div class="companys-content">
             <?php
-            $xml = simplexml_load_file("../xml/job_data.xml") or die("Error: Not Working");
-            foreach($xml as $jobData) {
-                echo '<li class=\'job-details\'> <div class=\'jobs-body\'>';
-                echo '<div class=\'job-header\'><div class=\'job-title\'>' . $jobData->TITLE . '</div>';
-                echo '<a href=\'#\' class=\'company-link\'>' . $jobData->COMPANY . '</a><br>';
-                echo $jobData->CITY . ', ' . $jobData->STATE . '</div>';
-                echo '<div class=\'job-section\'><div class=\'section-header\'>Job Details</div><div class=\'sub-section-header\'>Pay</div>' . $jobData->SALARY . '<div class=\'sub-section-header\'>Job Type</div>' . $jobData->TYPE . '</div>';
-                echo '<div class=\'job-section\'><div class=\'section-header\'>Full Job Description</div><div class=\'description-header\'>' . $jobData->TITLE . '</div>' . $jobData->DESCRIPTION . '<div class=\'description-header\'>Responsibilities</div><ul class=\'description-list\'>';
-                $responsibilitiesArray = explode("\n", $jobData->RESPONSIBILITIES);
-                foreach($responsibilitiesArray as $responsibilities) {
-                    echo '<li>' . $responsibilities . '</li>';
+            if (isset($_GET['page']) && !empty($_GET['page'])) {
+                $page = $_GET['page'];
+            } else {
+                $page = 1;
+            }
+            $xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
+            $company_count = $xml->count();
+            foreach($xml as $company_data) {
+                echo '<div class=\'company-details\'>';
+                echo '<div class=\'company-header\'>';
+                echo '<a href=\'#\' class=\'company-link\'>' . $company_data->NAME . '</a>';
+                echo '<div class=\'header-details\'>' . $company_data->CITY . ', ' . $company_data->STATE . '</div>';
+                echo '<div class=\'header-details\'>';
+                $rating = $company_data->RATING;
+                for ($i = 0; $i < 5; $i++) {
+                    if ($rating >= 0.6) {
+                        echo'<span class=\'fa fa-star checked\'></span>';
+                        $rating--;
+                    } else {
+                        echo'<span class=\'fa fa-star\'></span>';
+                    }
+
                 }
-                echo '</ul><div class=\'description-header\'>Qualifications</div><ul class=\'description-list\'>';
-                $qualificationsArray = explode("\n", $jobData->QUALIFICATIONS);
-                foreach($qualificationsArray as $qualification) {
-                    echo '<li>' . $qualification . '</li>';
+                echo ' ' . $company_data->RATING . ' (' . $company_data->REVIEWS . ')</div>';
+                echo '</div>';
+                echo '<div class=\'company-section\'>';
+                echo '<div class=\'section-header\'>Description</div>';
+                echo '<div class=\'\'>' . $company_data->PITCH . '</div>';
+                echo '</div>';
+                echo '<div class=\'company-section\'>';
+                echo '<div class=\'section-header\'>Services</div>';
+                echo '<ul class=\'services-list\'>';
+                foreach($company_data->SERVICES->SERVICE as $service_data) {
+                    echo '<li class=\'service-main\'>' . $service_data->MAIN;
+                    $services_array = explode("\n", $service_data->SUB);
+                    foreach($services_array as $service) {
+                        echo '<li class=\'serive-sub\'>' . $service . '</li>';
+                    }
+                    echo '</li>';
                 }
                 echo '</ul>';
                 echo '</div>';
-                echo '</div> </li>';
-                echo '<br>';
+                echo '<div class=\'company-section\'>';
+                echo '<div class=\'section-header\'>Pricing</div>';
+                echo '<div class=\'\'>Starting at ' . $company_data->COST_PLAN . '</div>';
+                echo '</div>';
+                echo '</div>';
             }
             ?>
         </ul>
@@ -78,7 +109,7 @@
 
 
 
-
+  <script src="../js/toggleNav.js"></script>
 </body>
 
 </html>
