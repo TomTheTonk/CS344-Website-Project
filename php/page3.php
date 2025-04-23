@@ -69,7 +69,7 @@
                 echo '<div class=\'header-details\'>';
                 $rating = $company_data->RATING;
                 for ($i = 0; $i < 5; $i++) {
-                    if ($rating >= 0.6) {
+                    if ($rating >= 1) {
                         echo'<span class=\'fa fa-star checked\'></span>';
                         $rating--;
                     } else {
