@@ -1,4 +1,6 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 
 <head> 
   <link rel="stylesheet" type="text/css" href="../css/page3.css">
@@ -38,7 +40,7 @@
   <section class="nav-content-wrap">
 
     <header class="content-banner">
-        <button id="toggleNav" class="toggle-button">☰</button> 
+        <button id="toggleNav" class="toggle-button">☰</button>
     </header>
     <div class="content-header">
         <div>
@@ -110,12 +112,11 @@
                 echo '<div class=\'section-header\'>Services</div>';
                 echo '<ul class=\'services-list\'>';
                 foreach($company_data->SERVICES->SERVICE as $service_data) {
-                    echo '<li class=\'service-section-header no-bullet\'>' . $service_data->MAIN;
+                    echo '<li class=\'service-section-header no-bullet\'>' . $service_data->MAIN . '</li>';
                     $services_array = explode("\n", $service_data->SUB);
                     foreach($services_array as $service) {
                         echo '<li class=\'service-sub\'>' . $service . '</li>';
                     }
-                    echo '</li>';
                 }
                 echo '</ul>';
                 echo '</div>';
@@ -130,16 +131,15 @@
                 echo '</div>';
             }
             ?>
-        </ul>
     </div>
     <div class="pagination-section">
         <?php
         echo '<div class=\'page-selector\'>';
         if ($page == 2) {
-            echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'><</a>';
+            echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>&lt;</a>';
             echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . 1 . '</a>';
         } elseif ($page > 2){
-            echo '<a href=\'?page=' . $page - 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'><</a>';
+            echo '<a href=\'?page=' . $page - 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>&lt;</a>';
             for($i = 2; $i > 0; $i--) {
                 echo '<a href=\'?page=' . $page - $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . $page - $i . '</a>';
             }
