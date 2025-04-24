@@ -7,8 +7,8 @@
   <script src="base.js" defer></script>
 </head>
 
-<body>
-  <div class="grid-for-nav">
+<body> 
+
     <nav class="nav-side">
         <div class="side-scroll">
             <div class="side-nav-search">
@@ -24,17 +24,22 @@
                 <li class="nav-list"><a class="nav-link" href="home.html">Home</a></li>
                 <li class="nav-list"><a class="nav-link" href="page1.html">Our Approach to Outsourcing</a></li>
                 <li class="nav-list"><a class="nav-link" href="page2.html">FAQ</a></li>
-                <li class="nav-list"><a class="nav-link" href="page3.html">Job Search</a></li>
+                <li class="nav-list"><a class="nav-link" href="../php/page3.php">Company Search</a></li>
                 <li class="nav-list"><a class="nav-link" href="page4.html">Contact Us</a></li>
             </ul>
 
         </div>
     </nav>
-</div>
+
 
   <section class="nav-content-wrap">
       <!--Use an id, as a class returns a collection instead of 1 single unique element-->
-        <form id="formID" target="_blank" action="../js/base.js" method="post" >
+
+      <header class="content-banner">
+        <button id="toggleNav" class="toggle-button">☰</button>   
+    </header>
+        <form id="formID" target="_blank" action="https://www.randyconnolly.com/tests/process.php" method="post" >
+
             
             <fieldset>
               <h1 class="ContactInfoHeader"> Contact Info</h1>
@@ -119,7 +124,6 @@
                     </div>
                       
                 </section>
-           
   
             </fieldset>
     </form>
@@ -135,7 +139,7 @@
 
 
 
-
+  <script src="../js/toggleNav.js"></script>
 </body>
 
 <script>
