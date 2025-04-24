@@ -10,7 +10,7 @@
   <title>Company Search</title>
 
   <meta name="description" content="Discover wonderful business partners to help your business run smoother and improve productivity.">
-  <meta name="keywords" content="outsource, out source, ">
+  <meta name="keywords" content="outsource, out source, company, advanced manufacturing, oursourcing, marketing, fabrication, support, management">
   <meta name="author" content="Allen Martin">
 </head>
 
