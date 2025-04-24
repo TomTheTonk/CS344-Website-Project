@@ -54,24 +54,23 @@
     </div>
     <div class="companys-content">
             <?php
-            if (isset($_GET['page']) && !empty($_GET['page'])) {
-                $page = $_GET['page'];
-            } else {
-                $page = 1;
-            }
-            //echo 'Page: ' . $page;
-            if (isset($_GET['per-page']) && !empty($_GET['per-page'])) {
-                $per_page = $_GET['per-page'];
+            $xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
+            $company_count = $xml->count();
+            if (isset($_GET['per_page']) && !empty($_GET['per_page'])) {
+                $per_page = $_GET['per_page'];
             } else {
                 $per_page = 2;
             }
-            //echo " Per-Page: " . $per_page;
-            $xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
-            $company_count = $xml->count();
+            $max_pages = round($company_count / $per_page);
+            if (isset($_GET['page']) && !empty($_GET['page'])) {
+                $page = $_GET['page'] > $max_pages ? $max_pages : $_GET['page'];
+            } else {
+                $page = 1;
+            }
             $left = true;
             $company_array = $xml->COMPANY;
             for($index_companies = ($page - 1) * $per_page; $index_companies < $page * $per_page && $index_companies < $company_count; $index_companies++) {
-                $company_data = $company_array[$index_companies];
+                $company_data = $company_array[(int)$index_companies];
                 echo '<div class=\'company-details';
                 if ($left) {
                     echo ' left';
@@ -135,7 +134,7 @@
     </div>
     <div class="pagination-section">
         <?php
-        $max_pages = round($company_count / $per_page);
+        echo '<div class=\'page-selector\'>';
         if ($page == 2) {
             echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'><</a>';
             echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . 1 . '</a>';
@@ -160,6 +159,19 @@
             }
             echo '<a href=\'?page=' . $page + 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>></a>';
         }
+        echo '</div>';
+        echo '<div class=\'select-div\'>';
+        echo 'Companies per page ';
+        echo '<select class=\'per-page-selector\' onChange=\'window.location.href=this.value\'>';
+        for ($per_page_var = 1; $per_page_var < 4; $per_page_var++) {
+            if ($per_page_var * 2 == $per_page) {
+                echo '<option selected=\'selected\' value=\'?page=' . $page . '&per_page=' . $per_page_var * 2 . '\'>' . $per_page_var * 2 . '</option>';
+            } else {
+                echo '<option value=\'?page=' . $page . '&per_page=' . $per_page_var * 2 . '\'>' . $per_page_var * 2 . '</option>';
+            }
+        }
+        echo '</select>';
+        echo '</div>';
         ?>
     </div>
   </section>

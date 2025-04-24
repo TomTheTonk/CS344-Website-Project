@@ -51,7 +51,7 @@
 }
 
 .right {
-    margin-left: 2.5%;
+    margin-left: auto;
     margin-right: 5%;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
@@ -130,6 +130,12 @@
     border-radius: 0.5em;
     text-decoration: none;
     font-weight: bold;
+    display: inline-block;
+}
+
+.page-selector {
+    margin-bottom: 1em;
+    display: inline-block;
 }
 
 .pagination-page-current {
@@ -144,4 +150,26 @@
 
 .pagination-page:hover {
     background-color: lightgray;
+}
+
+.select-div {
+    float: inline-end;
+}
+
+.per-page-selector {
+    width: 3em;
+    height: 34px;
+    margin-bottom: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(222, 222, 222);
+    border: none;
+}
+
+.nav-content-wrap div.page-selector{
+    padding-right: 0;
+}
+
+.nav-content-wrap div.select-div{
+    padding-left: 0;
 }
