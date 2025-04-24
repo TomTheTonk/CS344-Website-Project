@@ -113,3 +113,35 @@
 .service-sub {
     list-style-position: inside;
 }
+
+.pagination-section {
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+.pagination {
+    border: 0.1em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pagination-page-current {
+    background-color: #515050;
+    color: white;
+}
+
+.pagination-page {
+    background-color: rgb(222, 222, 222);
+    color: #343131;
+}
+
+.pagination-page:hover {
+    background-color: lightgray;
+}

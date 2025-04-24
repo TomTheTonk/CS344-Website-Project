@@ -133,21 +133,21 @@
             ?>
         </ul>
     </div>
-    <div class="pagination">
+    <div class="pagination-section">
         <?php
         $max_pages = round($company_count / $per_page);
         if ($page == 2) {
-            echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page\'>' . 1 . '</a>';
+            echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . 1 . '</a>';
         } elseif ($page > 2){
             for($i = 2; $i > 0; $i--) {
-                echo '<a href=\'?page=' . $page - $i . '&per_page=' . $per_page . '\' class=\'pagination-page\'>' . $page - $i . '</a>';
+                echo '<a href=\'?page=' . $page - $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . $page - $i . '</a>';
             }
         }
         //JS to stop jumping
-        echo '<a href=\'#\' class=\'pagination-page-current\'>' . $page . '</a>';
+        echo '<a href=\'#\' class=\'pagination-page-current pagination\'>' . $page . '</a>';
         if ($page < $max_pages) {
             for ($i = 1; $i + $page <= $max_pages && $i <= 2; $i++) {
-                echo '<a href=\'?page=' . $page + $i . '&per_page=' . $per_page . '\' class=\'pagination-page\'>' . $page + $i . '</a>';
+                echo '<a href=\'?page=' . $page + $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . $page + $i . '</a>';
             }
         }
         ?>
