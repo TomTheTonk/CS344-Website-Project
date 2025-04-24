@@ -6,8 +6,8 @@
         <RATING>4.7</RATING>
         <REVIEWS>1,284</REVIEWS>
         <PITCH>At Nexora Solutions, we empower companies to scale efficiently by delivering high-quality, outsourced business and technical services with precision and reliability. Whether you're a startup needing technical support or a growing enterprise looking to offload operations, Nexora is your trusted partner. With over a decade of experience and a global team of experts, we help you focus on growth while we handle the grind.
-            We combine cutting-edge tools, deep industry knowledge, and seamless communication to ensure every project is executed with excellence.</PITCH>
-            Nexora: Delivering tomorrow, today.
+            We combine cutting-edge tools, deep industry knowledge, and seamless communication to ensure every project is executed with excellence.
+            Nexora: Delivering tomorrow, today.</PITCH>
         <SERVICES>
             <SERVICE>
                 <MAIN>Software Development</MAIN>
@@ -46,7 +46,8 @@
                     Document Formatting and Transcription</SUB>
             </SERVICE>
         </SERVICES>
-        <COST_PLAN>$1,200/month</COST_PLAN>
+        <COST_PLAN>$1,200/month
+            (Varies based on service package and scope of work)</COST_PLAN>
     </COMPANY>
     <COMPANY>
         <NAME>ForgeLink Manufacturing Group</NAME>
@@ -95,21 +96,451 @@
                     Material Compliance Reports</SUB>
             </SERVICE>
         </SERVICES>
-        <COST_PLAN>$2,500/project</COST_PLAN>
+        <COST_PLAN>$2,500/project
+            (Varies based on materials, complexity, and volume)</COST_PLAN>
     </COMPANY>
     <COMPANY>
-        <NAME></NAME>
-        <CITY></CITY>
-        <STATE></STATE>
-        <RATING></RATING>
-        <REVIEWS></REVIEWS>
-        <PITCH></PITCH>
+        <NAME>IronPeak Fabrication Co.</NAME>
+        <CITY>Milwaukee</CITY>
+        <STATE>WI</STATE>
+        <RATING>4.6</RATING>
+        <REVIEWS>642</REVIEWS>
+        <PITCH>IronPeak Fabrication Co. is the backbone behind some of North America's most trusted industrial products. We specialize in heavy-duty and mid-scale manufacturing solutions with a focus on durability, compliance, and speed. When companies need rugged results that last, they turn to IronPeak.
+            From concept to completion, our in-house engineers and machine operators deliver everything from raw metalwork to fully assembled mechanical components. We thrive in high-demand sectors like construction, agriculture, energy, and transportation—delivering products that hold up under pressure.
+            Strong builds. Stronger partnerships.</PITCH>
         <SERVICES>
             <SERVICE>
-                <MAIN></MAIN>
-                <SUB></SUB>
+                <MAIN>Heavy Industrial Fabrication</MAIN>
+                <SUB>Structural Steel Frames and Components
+                    Welding and Assembly Services
+                    Skid Systems and Heavy Equipment Mounting</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Sheet Metal Fabrication</MAIN>
+                <SUB>CNC Plasma Cutting
+                    Press Brake Forming
+                    Custom Brackets and Enclosures</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Mechanical Assembly</MAIN>
+                <SUB>Multi-part Equipment Assembly
+                    Gearbox and Bearing Installation
+                    Torque Testing and QA</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Surface Finishing</MAIN>
+                <SUB>Industrial Painting and Sandblasting
+                    Zinc Plating and Galvanization
+                    Rust-Proof Coatings</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Prototyping and Small-Batch Runs</MAIN>
+                <SUB>Concept-to-Production Support
+                    One-Off Component Testing
+                    Pre-Market Product Samples</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Custom Manufacturing Projects</MAIN>
+                <SUB>Built-to-Print Services
+                    On-Site Engineering Consultation
+                    Scalable Production Schedules</SUB>
             </SERVICE>
         </SERVICES>
-        <COST_PLAN></COST_PLAN>
+        <COST_PLAN>$3,000 per production batch
+            (Custom pricing available for long-term contracts or volume-based orders)</COST_PLAN>
     </COMPANY>
+    <COMPANY>
+        <NAME>Luminate Agency</NAME>
+        <CITY>San Diego</CITY>
+        <STATE>CA</STATE>
+        <RATING>4.8</RATING>
+        <REVIEWS>1,032</REVIEWS>
+        <PITCH>Luminate Agency is a full-service outsourced marketing powerhouse helping brands cut through the noise and shine brighter. We blend data-driven strategy with bold creative to craft campaigns that don’t just look good—they convert.
+            Whether you're a small business looking to build buzz or a global brand in need of a fresh digital edge, Luminate delivers impactful results across every touchpoint. Our team of experts becomes your team—fast, flexible, and fiercely focused on growth.
+            Luminate: Outsourced marketing. In-house energy.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>Branding and Creative Design</MAIN>
+                <SUB>Logo and Visual Identity Development
+                    Marketing Collateral and Packaging
+                    Brand Voice and Messaging</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Digital Advertising</MAIN>
+                <SUB>Google Ads / PPC Campaigns
+                    Paid Social Media Ads (Meta, TikTok, LinkedIn)
+                    A/B Testing and Conversion Optimization</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Social Media Management</MAIN>
+                <SUB>Strategy and Content Planning
+                    Post Creation and Scheduling
+                    Community Engagement and Analytics</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Email Marketing</MAIN>
+                <SUB>Drip Campaigns
+                    List Management and Segmentation
+                    Newsletter Design</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Content Marketing</MAIN>
+                <SUB>Blog and Website Copy
+                    Video Scripts and Storyboarding
+                    SEO-Optimized Articles</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Analytics and Strategy</MAIN>
+                <SUB>Market Research
+                    Campaign Reporting Dashboards
+                    Competitor and Trend Analysis</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$1,500/month
+            (Custom bundles available based on business goals and platform needs)</COST_PLAN>
+    </COMPANY>
+    <COMPANY>
+        <NAME>LedgerCore Financial</NAME>
+        <CITY>Charlotte</CITY>
+        <STATE>NC</STATE>
+        <RATING>4.9</RATING>
+        <REVIEWS>918</REVIEWS>
+        <PITCH>LedgerCore Financial is a trusted partner for businesses looking to outsource their financial operations with confidence. Our team of certified professionals delivers tailored solutions in accounting, bookkeeping, payroll, and strategic financial planning—ensuring accuracy, compliance, and peace of mind.
+            From startups navigating their first fiscal year to established enterprises needing CFO-level insights, LedgerCore scales with your financial needs. We combine cutting-edge tools with personalized service to help your business grow with clarity.
+            LedgerCore: Your numbers. Our expertise.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>Bookkeeping and Accounting</MAIN>
+                <SUB>General Ledger Maintenance
+                    Bank Reconciliations
+                    Monthly and Quarterly Financial Reporting</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Payroll Management</MAIN>
+                <SUB>Employee Onboarding and Offboarding
+                    Direct Deposit and Tax Withholding
+                    Year-End W-2 and 1099 Filing</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Tax Preparation and Filing</MAIN>
+                <SUB>Corporate Tax Returns
+                    Sales Tax Compliance
+                    IRS Audit Support</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Virtual CFO Services</MAIN>
+                <SUB>Budgeting and Forecasting
+                    Strategic Financial Planning
+                    Cash Flow Management</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Accounts Payable and Receivable</MAIN>
+                <SUB>Vendor Payment Scheduling
+                    Invoice Generation and Tracking
+                    Collections and Dispute Resolution</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Financial Software Integration</MAIN>
+                <SUB>QuickBooks and Xero Setup
+                    Cloud-Based Accounting Systems
+                    Custom Dashboard and KPI Reporting</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$1,800/month
+            (Pricing varies based on company size, service depth, and reporting needs)</COST_PLAN>
+    </COMPANY>  
+    <COMPANY>
+        <NAME>StreamPort Logistics</NAME>
+        <CITY>Seattle</CITY>
+        <STATE>WA</STATE>
+        <RATING>4.7</RATING>
+        <REVIEWS>1,154</REVIEWS>
+        <PITCH>StreamPort Logistics is a full-spectrum outsourced shipping and logistics firm helping businesses streamline their supply chains with speed, precision, and global reach. Whether you're fulfilling eCommerce orders, managing inventory, or coordinating freight, StreamPort is your behind-the-scenes logistics powerhouse.
+            Our tech-driven systems and dedicated logistics specialists ensure every shipment gets where it needs to be—on time, every time. From first mile to final mile, we optimize your operations and take the stress out of shipping.
+            StreamPort: Moving your business forward.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>Warehousing and Fulfillment</MAIN>
+                <SUB>Inventory Storage and Management
+                    Pick, Pack, and Ship Services
+                    Real-Time Inventory Tracking</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Freight Management</MAIN>
+                <SUB>Domestic and International Freight Coordination
+                    Full Truckload (FTL) and Less Than Truckload (LTL)
+                    Freight Consolidation and Optimization</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>eCommerce Logistics</MAIN>
+                <SUB>Shopify, Amazon, and WooCommerce Integration
+                    Order Automation
+                    Returns and Reverse Logistics</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Customs and Compliance</MAIN>
+                <SUB>Import/Export Documentation
+                    HS Code Classification
+                    International Trade Compliance</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Last-Mile Delivery Solutions</MAIN>
+                <SUB>Urban Route Optimization
+                    Courier Service Coordination
+                    Real-Time Delivery Updates</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Supply Chain Consulting</MAIN>
+                <SUB>Logistics Cost Analysis
+                    Route and Carrier Strategy
+                    Risk and Contingency Planning</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$2,200/month
+            (Customized pricing based on shipment volume, regions served, and services selected)</COST_PLAN>
+    </COMPANY>  
+    <COMPANY>
+        <NAME>EchoServe Solutions</NAME>
+        <CITY>Phoenix</CITY>
+        <STATE>AZ</STATE>
+        <RATING>2.9</RATING>
+        <REVIEWS>487</REVIEWS>
+        <PITCH>EchoServe Solutions offers outsourced customer service support for businesses looking to reduce costs—but often at the expense of consistency and customer satisfaction. While the company promises 24/7 availability and multilingual support, clients frequently report issues with agent turnover, slow response times, and miscommunication.
+            Though EchoServe has potential in low-priority or high-volume support needs, it struggles to deliver the quality and professionalism expected for premium customer experiences.
+            EchoServe: Affordable service, but often echoing with complaints.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>Call Center Services</MAIN>
+                <SUB>Inbound Call Handling
+                    Basic Troubleshooting
+                    Order Processing</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Email Support</MAIN>
+                <SUB>Standard Response Templates
+                    24-48 Hour Reply Window
+                    Limited Issue Escalation</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Live Chat Support</MAIN>
+                <SUB>Basic Pre-Sales Assistance
+                    Scripted Chat Responses
+                    Limited Tech Knowledge</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Ticketing System Integration</MAIN>
+                <SUB>Basic Workflow Setup
+                    SLA Monitoring (Manual)
+                    Low-Capacity Ticket Management</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Multilingual Support</MAIN>
+                <SUB>English, Spanish, and French Available
+                    Machine-Assisted Translations
+                    Limited Language Fluency</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$800/month
+            (Low-cost packages available, but results may vary widely in quality and responsiveness)</COST_PLAN>
+    </COMPANY>     
+    <COMPANY>
+        <NAME>PeopleNest HR</NAME>
+        <CITY>Toledo</CITY>
+        <STATE>OH</STATE>
+        <RATING>2.6</RATING>
+        <REVIEWS>392</REVIEWS>
+        <PITCH>At PeopleNest HR, we believe every business—no matter how small—deserves access to reliable, affordable human resources support. Our goal is to take the stress out of hiring, payroll, and compliance so you can focus on growing your company. 
+            We offer straightforward packages, quick setup, and an experienced team ready to handle the day-to-day HR operations that can bog down your internal resources. With flexible pricing and scalable services, PeopleNest HR is the smart, budget-friendly choice for companies that need to outsource HR without breaking the bank.
+            PeopleNest: HR made simple, support made affordable.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>Employee Onboarding</MAIN>
+                <SUB>Standardized Welcome Packets
+                    Inconsistent Background Check Processing
+                    Delayed Paperwork Submission</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Payroll Administration</MAIN>
+                <SUB>Manual Payroll Entries
+                    Occasional Pay Delays
+                    Limited Benefits Integration</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>HR Policy Development</MAIN>
+                <SUB>Generic Policy Templates
+                    Minimal Customization
+                    Poor Compliance Tracking</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Dispute Resolution</MAIN>
+                <SUB>Basic Mediation Services
+                    Long Response Times
+                    No Legal Liaison Support</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Employee Records Management</MAIN>
+                <SUB>Basic Cloud Storage
+                    Limited Access Controls
+                    Data Entry Errors Reported</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Compliance Monitoring</MAIN>
+                <SUB>Outdated Regulatory Information
+                    No Automatic Alerts
+                    Minimal Proactive Guidance</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$1,000/month
+            (Lower-tier pricing reflects reduced support and outdated tools)</COST_PLAN>
+    </COMPANY>       
+    <COMPANY>
+        <NAME>GoldLine Global Logistics</NAME>
+        <CITY>New York</CITY>
+        <STATE>NY</STATE>
+        <RATING>3.5</RATING>
+        <REVIEWS>3,482</REVIEWS>
+        <PITCH>GoldLine Global Logistics positions itself as a luxury-tier logistics and shipping partner for brands seeking premium presentation and global reach. Known for their polished image and polished packaging, GoldLine boasts a vast client list and sophisticated tech—but often at a cost that raises eyebrows.
+            While they offer high-end tracking systems, branded touchpoints, and white-glove services, many clients report the pricing doesn't always match the performance. For businesses wanting to impress on the surface, GoldLine delivers—but efficiency and cost-effectiveness may come second.
+            GoldLine: Prestige logistics—priced accordingly.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>White-Glove Freight Services</MAIN>
+                <SUB>Personalized Delivery Experience
+                    Branded Crating and Unpacking
+                    Climate-Controlled Transit</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Luxury Retail Fulfillment</MAIN>
+                <SUB>Premium Packaging Materials
+                    Signature Confirmation
+                    Concierge-Level Customer Updates</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>International Logistics</MAIN>
+                <SUB>Global Customs Handling
+                    VIP Freight Priority Options
+                    Real-Time Global Tracking Suite</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Supply Chain Design</MAIN>
+                <SUB>High-Touch Route Optimization
+                    Custom Packaging Engineering
+                    Strategy Consulting Add-Ons</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Secure Warehousing</MAIN>
+                <SUB>24/7 Monitored Storage
+                    Ultra-Clean, Temperature-Controlled Facilities
+                    Private Access Inventory Rooms</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Event and Showcase Logistics</MAIN>
+                <SUB>Art, Fashion, and Product Roadshows
+                    On-Site Logistics Managers
+                    Elevated Presentation Logistics</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$6,500/month
+            (Luxury-tier plans only. Add-ons and surcharges may apply for custom branding, global routes, or special handling.)</COST_PLAN>
+    </COMPANY>
+    <COMPANY>
+        <NAME>CodeCrate Labs</NAME>
+        <CITY>Austin</CITY>
+        <STATE>TX</STATE>
+        <RATING>4.6</RATING>
+        <REVIEWS>2,108</REVIEWS>
+        <PITCH>CodeCrate Labs is a full-stack software development firm helping startups, SMBs, and enterprise clients build smarter digital products. From MVPs to enterprise-grade systems, we bring scalable code, clear communication, and agile collaboration to every project.
+            Whether you need a SaaS platform built from scratch, a legacy system modernized, or a mobile app that actually performs—our developers, designers, and architects integrate seamlessly into your workflow.
+            CodeCrate: Outsourced development with in-house precision.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>Web Application Development</MAIN>
+                <SUB>Custom SaaS Platforms
+                    Admin Dashboards
+                    API Development and Integration</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Mobile App Development</MAIN>
+                <SUB>iOS and Android Native Apps
+                    Cross-Platform with Flutter or React Native
+                    App Store Deployment</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>UI/UX Design</MAIN>
+                <SUB>Wireframing and Prototyping
+                    High-Fidelity UI Mockups
+                    User Journey Mapping</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>DevOps and Infrastructure</MAIN>
+                <SUB>CI/CD Pipeline Setup
+                    Cloud Architecture (AWS, Azure, GCP)
+                    Monitoring and Scaling</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>QA and Testing</MAIN>
+                <SUB>Manual and Automated Testing
+                    Regression Testing
+                    Performance and Load Testing</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Legacy System Modernization</MAIN>
+                <SUB>Codebase Refactoring
+                    Database Migration
+                    Tech Stack Upgrade</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$4,000/month
+            (Pricing varies based on tech stack, project size, and development cycle length)</COST_PLAN>
+    </COMPANY>
+    <COMPANY>
+        <NAME>VoiceNest Solutions</NAME>
+        <CITY>Orlando</CITY>
+        <STATE>FL</STATE>
+        <RATING>4.5</RATING>
+        <REVIEWS>1,784</REVIEWS>
+        <PITCH>VoiceNest Solutions is your go-to partner for outsourced customer service that actually feels like an extension of your brand. We blend empathetic communication, smart technology, and experienced agents to deliver support that’s fast, friendly, and always on point.
+            Whether you're scaling a startup or supporting millions of customers globally, VoiceNest gives you the flexibility to grow without sacrificing service quality. We don’t just handle tickets—we build trust, loyalty, and satisfaction with every call, chat, and message.
+            VoiceNest: Your voice, our mission.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>24/7 Call Center Support</MAIN>
+                <SUB>Inbound and Outbound Support
+                    Order Tracking and Status Updates
+                    Product/Service Inquiries</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Live Chat Support</MAIN>
+                <SUB>Real-Time Website Chat
+                    Scripted and Freeform Options
+                    Tech-Enabled Routing and Response Time Monitoring</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Email and Ticket Support</MAIN>
+                <SUB>Helpdesk Management (Zendesk, Freshdesk, etc.)
+                    SLA Tracking and Escalation Handling
+                    Response Template Optimization</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Multilingual Support</MAIN>
+                <SUB>Fluent English, Spanish, French, and German
+                    Cultural Training for Agents
+                    Translation Tools for Niche Languages</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Technical Support (Tier 1 and 2)</MAIN>
+                <SUB>Basic Troubleshooting and Escalations
+                    Knowledge Base Management
+                    Remote Assistance Tools</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Customer Experience Insights</MAIN>
+                <SUB>Call Quality Monitoring
+                    CSAT/NPS Reporting
+                    Trend and Sentiment Analysis</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$2,000/month
+            (Flexible pricing based on volume, languages, and support channels)</COST_PLAN>
+    </COMPANY>        
 </COMPANY_DATA>
