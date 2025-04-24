@@ -6,8 +6,8 @@
         <RATING>4.7</RATING>
         <REVIEWS>1,284</REVIEWS>
         <PITCH>At Nexora Solutions, we empower companies to scale efficiently by delivering high-quality, outsourced business and technical services with precision and reliability. Whether you're a startup needing technical support or a growing enterprise looking to offload operations, Nexora is your trusted partner. With over a decade of experience and a global team of experts, we help you focus on growth while we handle the grind.
-            We combine cutting-edge tools, deep industry knowledge, and seamless communication to ensure every project is executed with excellence.</PITCH>
-            Nexora: Delivering tomorrow, today.
+            We combine cutting-edge tools, deep industry knowledge, and seamless communication to ensure every project is executed with excellence.
+            Nexora: Delivering tomorrow, today.</PITCH>
         <SERVICES>
             <SERVICE>
                 <MAIN>Software Development</MAIN>
@@ -46,7 +46,8 @@
                     Document Formatting and Transcription</SUB>
             </SERVICE>
         </SERVICES>
-        <COST_PLAN>$1,200/month</COST_PLAN>
+        <COST_PLAN>$1,200/month
+            (Varies based on service package and scope of work)</COST_PLAN>
     </COMPANY>
     <COMPANY>
         <NAME>ForgeLink Manufacturing Group</NAME>
@@ -95,7 +96,108 @@
                     Material Compliance Reports</SUB>
             </SERVICE>
         </SERVICES>
-        <COST_PLAN>$2,500/project</COST_PLAN>
+        <COST_PLAN>$2,500/project
+            (Varies based on materials, complexity, and volume)</COST_PLAN>
+    </COMPANY>
+    <COMPANY>
+        <NAME>IronPeak Fabrication Co.</NAME>
+        <CITY>Milwaukee</CITY>
+        <STATE>WI</STATE>
+        <RATING>4.6</RATING>
+        <REVIEWS>642</REVIEWS>
+        <PITCH>IronPeak Fabrication Co. is the backbone behind some of North America's most trusted industrial products. We specialize in heavy-duty and mid-scale manufacturing solutions with a focus on durability, compliance, and speed. When companies need rugged results that last, they turn to IronPeak.
+            From concept to completion, our in-house engineers and machine operators deliver everything from raw metalwork to fully assembled mechanical components. We thrive in high-demand sectors like construction, agriculture, energy, and transportation—delivering products that hold up under pressure.
+            Strong builds. Stronger partnerships.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>Heavy Industrial Fabrication</MAIN>
+                <SUB>Structural Steel Frames and Components
+                    Welding and Assembly Services
+                    Skid Systems and Heavy Equipment Mounting</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Sheet Metal Fabrication</MAIN>
+                <SUB>CNC Plasma Cutting
+                    Press Brake Forming
+                    Custom Brackets and Enclosures</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Mechanical Assembly</MAIN>
+                <SUB>Multi-part Equipment Assembly
+                    Gearbox and Bearing Installation
+                    Torque Testing and QA</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Surface Finishing</MAIN>
+                <SUB>Industrial Painting and Sandblasting
+                    Zinc Plating and Galvanization
+                    Rust-Proof Coatings</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Prototyping and Small-Batch Runs</MAIN>
+                <SUB>Concept-to-Production Support
+                    One-Off Component Testing
+                    Pre-Market Product Samples</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Custom Manufacturing Projects</MAIN>
+                <SUB>Built-to-Print Services
+                    On-Site Engineering Consultation
+                    Scalable Production Schedules</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$3,000 per production batch
+            (Custom pricing available for long-term contracts or volume-based orders)</COST_PLAN>
+    </COMPANY>
+    <COMPANY>
+        <NAME>Luminate Agency</NAME>
+        <CITY>San Diego</CITY>
+        <STATE>CA</STATE>
+        <RATING>4.8</RATING>
+        <REVIEWS>1,032</REVIEWS>
+        <PITCH>Luminate Agency is a full-service outsourced marketing powerhouse helping brands cut through the noise and shine brighter. We blend data-driven strategy with bold creative to craft campaigns that don’t just look good—they convert.
+            Whether you're a small business looking to build buzz or a global brand in need of a fresh digital edge, Luminate delivers impactful results across every touchpoint. Our team of experts becomes your team—fast, flexible, and fiercely focused on growth.
+            Luminate: Outsourced marketing. In-house energy.</PITCH>
+        <SERVICES>
+            <SERVICE>
+                <MAIN>Branding and Creative Design</MAIN>
+                <SUB>Logo and Visual Identity Development
+                    Marketing Collateral and Packaging
+                    Brand Voice and Messaging</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Digital Advertising</MAIN>
+                <SUB>Google Ads / PPC Campaigns
+                    Paid Social Media Ads (Meta, TikTok, LinkedIn)
+                    A/B Testing and Conversion Optimization</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Social Media Management</MAIN>
+                <SUB>Strategy and Content Planning
+                    Post Creation and Scheduling
+                    Community Engagement and Analytics</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Email Marketing</MAIN>
+                <SUB>Drip Campaigns
+                    List Management and Segmentation
+                    Newsletter Design</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Content Marketing</MAIN>
+                <SUB>Blog and Website Copy
+                    Video Scripts and Storyboarding
+                    SEO-Optimized Articles</SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN>Analytics and Strategy</MAIN>
+                <SUB>Market Research
+                    Campaign Reporting Dashboards
+                    Competitor and Trend Analysis</SUB>
+            </SERVICE>
+        </SERVICES>
+        <COST_PLAN>$1,500/month
+            (Custom bundles available based on business goals and platform needs)</COST_PLAN>
     </COMPANY>
     <COMPANY>
         <NAME></NAME>
@@ -105,6 +207,26 @@
         <REVIEWS></REVIEWS>
         <PITCH></PITCH>
         <SERVICES>
+            <SERVICE>
+                <MAIN></MAIN>
+                <SUB></SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN></MAIN>
+                <SUB></SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN></MAIN>
+                <SUB></SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN></MAIN>
+                <SUB></SUB>
+            </SERVICE>
+            <SERVICE>
+                <MAIN></MAIN>
+                <SUB></SUB>
+            </SERVICE>
             <SERVICE>
                 <MAIN></MAIN>
                 <SUB></SUB>
