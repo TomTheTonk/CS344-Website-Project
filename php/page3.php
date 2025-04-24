@@ -57,7 +57,7 @@
             if (isset($_GET['page']) && !empty($_GET['page'])) {
                 $page = $_GET['page'];
             } else {
-                $page = 3;
+                $page = 1;
             }
             //echo 'Page: ' . $page;
             if (isset($_GET['per-page']) && !empty($_GET['per-page'])) {
