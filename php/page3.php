@@ -54,15 +54,23 @@
     </div>
     <div class="companys-content">
             <?php
+            $xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
+            $company_count = $xml->count();
+            if (isset($_GET['per_page']) && !empty($_GET['per_page'])) {
+                $per_page = $_GET['per_page'];
+            } else {
+                $per_page = 2;
+            }
+            $max_pages = round($company_count / $per_page);
             if (isset($_GET['page']) && !empty($_GET['page'])) {
-                $page = $_GET['page'];
+                $page = $_GET['page'] > $max_pages ? $max_pages : $_GET['page'];
             } else {
                 $page = 1;
             }
-            $xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
-            $company_count = $xml->count();
             $left = true;
-            foreach($xml as $company_data) {
+            $company_array = $xml->COMPANY;
+            for($index_companies = ($page - 1) * $per_page; $index_companies < $page * $per_page && $index_companies < $company_count; $index_companies++) {
+                $company_data = $company_array[(int)$index_companies];
                 echo '<div class=\'company-details';
                 if ($left) {
                     echo ' left';
@@ -77,7 +85,7 @@
                 echo '<div class=\'header-details\'>' . $company_data->CITY . ', ' . $company_data->STATE . '</div>';
                 echo '<div class=\'header-details\'>';
                 $rating = $company_data->RATING;
-                for ($i = 0; $i < 5; $i++) {
+                for ($index_rating = 0; $index_rating < 5; $index_rating++) {
                     if ($rating >= 1) {
                         echo'<span class=\'fa fa-star checked\'></span>';
                         $rating--;
@@ -90,11 +98,11 @@
                 echo '<div class=\'company-section\'>';
                 echo '<div class=\'section-header\'>Description</div>';
                 $pitch_array = explode("\n", $company_data->PITCH);
-                for ($index = 0; $index < count($pitch_array); $index++) {
-                    if ($index != count($pitch_array) - 1) {
-                        echo '<div class=\'section-body\'>' . $pitch_array[$index] . '</div>';
+                for ($index_pitch = 0; $index_pitch < count($pitch_array); $index_pitch++) {
+                    if ($index_pitch != count($pitch_array) - 1) {
+                        echo '<div class=\'section-body\'>' . $pitch_array[$index_pitch] . '</div>';
                     } else {
-                        echo '<div class=\'sub-section-header\'>' . $pitch_array[$index] . '</div>';
+                        echo '<div class=\'sub-section-header section-body\'>' . $pitch_array[$index_pitch] . '</div>';
                     }
                 }
                 echo '</div>';
@@ -123,6 +131,48 @@
             }
             ?>
         </ul>
+    </div>
+    <div class="pagination-section">
+        <?php
+        echo '<div class=\'page-selector\'>';
+        if ($page == 2) {
+            echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'><</a>';
+            echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . 1 . '</a>';
+        } elseif ($page > 2){
+            echo '<a href=\'?page=' . $page - 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'><</a>';
+            for($i = 2; $i > 0; $i--) {
+                echo '<a href=\'?page=' . $page - $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . $page - $i . '</a>';
+            }
+        }
+        //JS to stop jumping
+        echo '<a href=\'#\' class=\'pagination-page-current pagination\'>' . $page . '</a>';
+        if ($page < $max_pages) {
+            if ($page == 1) {
+                $pagination_options = 4;
+            } elseif ($page == 2) {
+                $pagination_options = 3;
+            } else {
+                $pagination_options = 2;
+            }
+            for ($i = 1; $i + $page <= $max_pages && $i <= $pagination_options; $i++) {
+                echo '<a href=\'?page=' . $page + $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . $page + $i . '</a>';
+            }
+            echo '<a href=\'?page=' . $page + 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>></a>';
+        }
+        echo '</div>';
+        echo '<div class=\'select-div\'>';
+        echo 'Companies per page ';
+        echo '<select class=\'per-page-selector\' onChange=\'window.location.href=this.value\'>';
+        for ($per_page_var = 1; $per_page_var < 4; $per_page_var++) {
+            if ($per_page_var * 2 == $per_page) {
+                echo '<option selected=\'selected\' value=\'?page=' . $page . '&per_page=' . $per_page_var * 2 . '\'>' . $per_page_var * 2 . '</option>';
+            } else {
+                echo '<option value=\'?page=' . $page . '&per_page=' . $per_page_var * 2 . '\'>' . $per_page_var * 2 . '</option>';
+            }
+        }
+        echo '</select>';
+        echo '</div>';
+        ?>
     </div>
   </section>
 
