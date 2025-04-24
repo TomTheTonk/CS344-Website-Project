@@ -103,7 +103,7 @@
                     if ($index_pitch != count($pitch_array) - 1) {
                         echo '<div class=\'section-body\'>' . $pitch_array[$index_pitch] . '</div>';
                     } else {
-                        echo '<div class=\'sub-section-header\'>' . $pitch_array[$index_pitch] . '</div>';
+                        echo '<div class=\'sub-section-header section-body\'>' . $pitch_array[$index_pitch] . '</div>';
                     }
                 }
                 echo '</div>';
@@ -137,8 +137,10 @@
         <?php
         $max_pages = round($company_count / $per_page);
         if ($page == 2) {
+            echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'><</a>';
             echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . 1 . '</a>';
         } elseif ($page > 2){
+            echo '<a href=\'?page=' . $page - 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'><</a>';
             for($i = 2; $i > 0; $i--) {
                 echo '<a href=\'?page=' . $page - $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . $page - $i . '</a>';
             }
@@ -146,9 +148,17 @@
         //JS to stop jumping
         echo '<a href=\'#\' class=\'pagination-page-current pagination\'>' . $page . '</a>';
         if ($page < $max_pages) {
-            for ($i = 1; $i + $page <= $max_pages && $i <= 2; $i++) {
+            if ($page == 1) {
+                $pagination_options = 4;
+            } elseif ($page == 2) {
+                $pagination_options = 3;
+            } else {
+                $pagination_options = 2;
+            }
+            for ($i = 1; $i + $page <= $max_pages && $i <= $pagination_options; $i++) {
                 echo '<a href=\'?page=' . $page + $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . $page + $i . '</a>';
             }
+            echo '<a href=\'?page=' . $page + 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>></a>';
         }
         ?>
     </div>
