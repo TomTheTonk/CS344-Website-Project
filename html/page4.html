@@ -34,23 +34,25 @@
 
   <section class="nav-content-wrap">
       <!--Use an id, as a class returns a collection instead of 1 single unique element-->
+
       <header class="content-banner">
         <button id="toggleNav" class="toggle-button">☰</button>   
     </header>
         <form id="formID" target="_blank" action="https://www.randyconnolly.com/tests/process.php" method="post" >
+
             
             <fieldset>
               <h1 class="ContactInfoHeader"> Contact Info</h1>
               
 
 
-             <section class="gridSection">
+            <section id="gridSection">
               <div class="ContactDiv">
                 <p>Cole Graves</p>
                 <p>Dept: Boss</p>
                 <p>Phone Number: 580-343-3284 </p>
                 <p>Email: 
-                  <a href="https://www.w3schools.com/tags/att_a_href.asp">w3schools</a>
+                  <a href="mailto:wa3445xy@go.minnstate.edu">My Email</a>
                 </p>
               </div>
               <div class="ContactDiv">
@@ -73,7 +75,7 @@
               <p>Phone Number: 580-343-3284 </p>
               <p>Email: <a class="P4Link"  href="https://www.w3schools.com">Email</a></p>
             </div>
-             </section>
+         </section>
 
               <p class="HeadFormThing"><b>Need Something Else? Submit a complaint below</b></p>
 
@@ -110,13 +112,17 @@
                     <input type="radio" name="type" value="Processing "> Processing
                     <input type="radio" name="type" value="Shipped "> Shipped
                     -->
-
-                    <label>Description</label>
+                    <div class="formDiv">
+                      <label>Description</label>
                  
                       <input class="DescriptionInputBox"type="text" name="Description" placeholder="Enter Text Here">
-                    
+                    </div>
                   
-                      <input class="submit" type="submit">
+                    <div class="formDiv"> 
+                      <input class="submit" type="submit" onclick="myFunction()">
+                      
+                    </div>
+                      
                 </section>
   
             </fieldset>
@@ -135,5 +141,11 @@
 
   <script src="../js/toggleNav.js"></script>
 </body>
+
+<script>
+  function myFunction() {
+    window.location.href="submitted.html";  
+  }
+</script>
 
 </html>
