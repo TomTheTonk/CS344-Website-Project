@@ -1,134 +1,144 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 
 <head>
   <link rel="stylesheet" type="text/css" href="../css/root.css">
   <link rel="stylesheet" type="text/css" href="../css/file4css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Conact Us</title>
   <!-- Use "Defer" to ensure that the script only runs after the DOM is ready-->
   <script src="base.js" defer></script>
+
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
 </head>
 
-<body> 
+<body>
+  <a class="skip-to-content-link" href="#content" tabindex="1">Skip to content</a>
+  <a class="skip-to-content-link" href="../html/page5.html" tabindex="1">Accessibility Statement</a>
+  <nav class="nav-side">
+    <div class="side-scroll">
+      <div class="side-nav-search">
+        <img src="../media/Logo.jpg" class="logo" alt="Advanced Manufacturing">
+        <h1> Advanced Manufacturing </h1>
+      </div>
 
-    <nav class="nav-side">
-        <div class="side-scroll">
-            <div class="side-nav-search">
-                <img src="../media/Logo.jpg" class="logo" alt="Advanced Manufacturing"> 
-                <h1> Advanced Manufacturing </h1>
-            </div>
 
-            
 
-        </div>
-        <div class="menu-vertical">
-            <ul>
-                <li class="nav-list"><a class="nav-link" href="home.html">Home</a></li>
-                <li class="nav-list"><a class="nav-link" href="page1.html">Our Approach to Outsourcing</a></li>
-                <li class="nav-list"><a class="nav-link" href="page2.html">FAQ</a></li>
-                <li class="nav-list"><a class="nav-link" href="../php/page3.php">Company Search</a></li>
-                <li class="nav-list"><a class="nav-link" href="page4.html">Contact Us</a></li>
-            </ul>
+    </div>
+    <div class="menu-vertical">
+      <ul>
+        <li class="nav-list"><a class="nav-link" href="home.html" tabindex="1">Home</a></li>
+        <li class="nav-list"><a class="nav-link" href="page1.html" tabindex="1">Our Approach to
+            Outsourcing</a></li>
+        <li class="nav-list"><a class="nav-link" href="page2.html" tabindex="1">FAQ</a></li>
+        <li class="nav-list"><a class="nav-link" href="../php/page3.php" tabindex="1">Company Search</a></li>
+        <li class="nav-list"><a class="nav-link" href="page4.html" tabindex="1">Contact Us</a></li>
+      </ul>
 
-        </div>
-    </nav>
+    </div>
+  </nav>
 
 
   <section class="nav-content-wrap">
-      <!--Use an id, as a class returns a collection instead of 1 single unique element-->
-      <header class="content-banner">
-        <button id="toggleNav" class="toggle-button">☰</button>   
+    <!--Use an id, as a class returns a collection instead of 1 single unique element-->
+    <header class="content-banner">
+      <button id="toggleNav" class="toggle-button fa fa-bars"></button>
     </header>
-        <form id="formID" target="_blank" action="https://www.randyconnolly.com/tests/process.php" method="post" >
-            
-            <fieldset>
-              <h1 class="ContactInfoHeader"> Contact Info</h1>
-              
+    <form id="formID" target="_blank" action="https://www.randyconnolly.com/tests/process.php" method="post">
+
+      <fieldset id="content">
+        <h1 class="ContactInfoHeader"> Contact Info</h1>
 
 
-             <section class="gridSection">
-              <div class="ContactDiv">
-                <p>Cole Graves</p>
-                <p>Dept: Boss</p>
-                <p>Phone Number: 580-343-3284 </p>
-                <p>Email: 
-                  <a href="https://www.w3schools.com/tags/att_a_href.asp">w3schools</a>
-                </p>
-              </div>
-              <div class="ContactDiv">
-              <p>Cole Graves</p>
-              <p>Dept: HR</p>
-              <p>Phone Number: 580-343-3284 </p>
-              <p>Email: 
-                <a href="https://www.w3schools.com">Email</a>
-              </p>
-              </div>
-              <div class="ContactDiv">
-               <p>Cole Graves</p>
-               <p>Dept: Customer Service</p>
-              <p>Phone Number: 580-343-3284 </p>
-              <p>Email: <a class="P4Link" href="https://www.w3schools.com">Email</a></p>
-            </div>
-            <div class="ContactDiv">
-              <p>Cole Graves</p>
-              <p>Dept: Chilli Dog</p>
-              <p>Phone Number: 580-343-3284 </p>
-              <p>Email: <a class="P4Link"  href="https://www.w3schools.com">Email</a></p>
-            </div>
-             </section>
 
-              <p class="HeadFormThing"><b>Need Something Else? Submit a complaint below</b></p>
+        <section class="gridSection">
+          <div class="ContactDiv">
+            <p>Cole Graves</p>
+            <p>Dept: Boss</p>
+            <p>Phone Number: 580-343-3284 </p>
+            <p>Email:
+              <a href="https://www.w3schools.com/tags/att_a_href.asp">w3schools</a>
+            </p>
+          </div>
+          <div class="ContactDiv">
+            <p>Cole Graves</p>
+            <p>Dept: HR</p>
+            <p>Phone Number: 580-343-3284 </p>
+            <p>Email:
+              <a href="https://www.w3schools.com">Email</a>
+            </p>
+          </div>
+          <div class="ContactDiv">
+            <p>Cole Graves</p>
+            <p>Dept: Customer Service</p>
+            <p>Phone Number: 580-343-3284 </p>
+            <p>Email: <a class="P4Link" href="https://www.w3schools.com">Email</a></p>
+          </div>
+          <div class="ContactDiv">
+            <p>Cole Graves</p>
+            <p>Dept: Chilli Dog</p>
+            <p>Phone Number: 580-343-3284 </p>
+            <p>Email: <a class="P4Link" href="https://www.w3schools.com">Email</a></p>
+          </div>
+        </section>
 
-                <section class="FormPara">
-                  <div class="formDiv">
-                    <label> Customer Info </label>
-                    <input type="text" name="Client" placeholder="Enter Name">
-                  </div>
-                  <div class="formDiv">
-                    <label> Address </label>
-                    <input type="text" name="Address" placeholder="Enter Address">
-                  </div>
-                  <div class="formDiv">
-                    <label> Phone Number </label>
-                    <input type="text" name="Contact: Phone Number" placeholder="Enter Phone Number (Optional)">
-                  </div>
-                  <div class="formDiv">
-                    <label> Personal Email </label>
-                    <input type="text" name="Contact: Email" placeholder="Enter Email">
-                  </div>
-                  <div class="formDiv">
-                    <label> Department</label>
-                    <select name="Department">
-                           <option>None</option>
-                           <option>Customer Service</option>
-                           <option>Retail</option>
-                           <option>Boss</option>
-                           <option>HR</option>
-                    </select>
-                  </div>
-                    <!-- 
+        <p class="HeadFormThing"><b>Need Something Else? Submit a complaint below</b></p>
+
+        <section class="FormPara">
+          <div class="formDiv">
+            <label> Customer Info </label>
+            <input type="text" name="Client" placeholder="Enter Name">
+          </div>
+          <div class="formDiv">
+            <label> Address </label>
+            <input type="text" name="Address" placeholder="Enter Address">
+          </div>
+          <div class="formDiv">
+            <label> Phone Number </label>
+            <input type="text" name="Contact: Phone Number" placeholder="Enter Phone Number (Optional)">
+          </div>
+          <div class="formDiv">
+            <label> Personal Email </label>
+            <input type="text" name="Contact: Email" placeholder="Enter Email">
+          </div>
+          <div class="formDiv">
+            <label> Department</label>
+            <select name="Department">
+              <option>None</option>
+              <option>Customer Service</option>
+              <option>Retail</option>
+              <option>Boss</option>
+              <option>HR</option>
+            </select>
+          </div>
+          <!-- 
                     <label>Status</label>
                     <input type="radio" name="type" value="Pending "> Pending
                     <input type="radio" name="type" value="Processing "> Processing
                     <input type="radio" name="type" value="Shipped "> Shipped
                     -->
 
-                    <label>Description</label>
-                 
-                      <input class="DescriptionInputBox"type="text" name="Description" placeholder="Enter Text Here">
-                    
-                  
-                      <input class="submit" type="submit">
-                </section>
-  
-            </fieldset>
+          <label>Description</label>
+
+          <input class="DescriptionInputBox" type="text" name="Description" placeholder="Enter Text Here">
+
+
+          <input class="submit" type="submit">
+        </section>
+
+      </fieldset>
     </form>
 
     <!-- This is the footer for the page-->
     <footer>
       <p>For more info: <a class="P4Links" href="https://www.w3schools.com/tags/att_a_href.asp">Extra info</a></p>
 
-  </footer>    
-        
-  
+    </footer>
+
+
   </section>
 
 

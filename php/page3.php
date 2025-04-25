@@ -15,6 +15,8 @@
 </head>
 
 <body>
+    <a class="skip-to-content-link" href="#content" tabindex="1">Skip to content</a>
+    <a class="skip-to-content-link" href="../html/page5.html" tabindex="1">Accessibility Statement</a>
     <nav class="nav-side">
         <div class="side-scroll">
             <div class="side-nav-search">
@@ -27,11 +29,11 @@
         </div>
         <div class="menu-vertical">
             <ul>
-                <li class="nav-list"><a class="nav-link" href="../html/home.html">Home</a></li>
-                <li class="nav-list"><a class="nav-link" href="../html/page1.html">Our Approach to Outsourcing</a></li>
-                <li class="nav-list"><a class="nav-link" href="../html/page2.html">FAQ</a></li>
-                <li class="nav-list"><a class="nav-link" href="page3.php">Company Search</a></li>
-                <li class="nav-list"><a class="nav-link" href="../html/page4.html">Contact Us</a></li>
+                <li class="nav-list"><a class="nav-link" href="../html/home.html"  tabindex="1">Home</a></li>
+                <li class="nav-list"><a class="nav-link" href="../html/page1.html" tabindex="1">Our Approach to Outsourcing</a></li>
+                <li class="nav-list"><a class="nav-link" href="../html/page2.html" tabindex="1">FAQ</a></li>
+                <li class="nav-list"><a class="nav-link" href="page3.php" tabindex="1">Company Search</a></li>
+                <li class="nav-list"><a class="nav-link" href="../html/page4.html" tabindex="1">Contact Us</a></li>
             </ul>
 
         </div>
@@ -40,14 +42,14 @@
     <section class="nav-content-wrap">
 
         <header class="content-banner">
-            <button id="toggleNav" class="toggle-button">☰</button>
+            <button id="toggleNav" class="toggle-button fa fa-bars"></button>
         </header>
-        <main>
+        <main id="content">
             <div class="content-header">
                 <div>
                     <form action="" mehod="get">
 
-                        <input type="text" class="company-search-box" name="company-keyword" autocomplete="off">
+                        <input type="text" class="company-search-box" name="company-keyword" autocomplete="off" tabindex="1">
 
 
                         <input type="submit" class="search-submit">
@@ -137,16 +139,16 @@
                 <?php
                 echo '<div class=\'page-selector\'>';
                 if ($page == 2) {
-                    echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>&lt;</a>';
-                    echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . 1 . '</a>';
+                    echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\' tabindex=\'1\'>&lt;</a>';
+                    echo '<a href=\'?page=' . 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\' tabindex=\'1\'>' . 1 . '</a>';
                 } elseif ($page > 2) {
-                    echo '<a href=\'?page=' . $page - 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>&lt;</a>';
+                    echo '<a href=\'?page=' . $page - 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\' tabindex=\'1\'>&lt;</a>';
                     for ($i = 2; $i > 0; $i--) {
-                        echo '<a href=\'?page=' . $page - $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . $page - $i . '</a>';
+                        echo '<a href=\'?page=' . $page - $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\' tabindex=\'1\'>' . $page - $i . '</a>';
                     }
                 }
                 //JS to stop jumping
-                echo '<a href=\'#\' class=\'pagination-page-current pagination\'>' . $page . '</a>';
+                echo '<a href=\'#\' class=\'pagination-page-current pagination\' tabindex=\'1\'>' . $page . '</a>';
                 if ($page < $max_pages) {
                     if ($page == 1) {
                         $pagination_options = 4;
@@ -156,9 +158,9 @@
                         $pagination_options = 2;
                     }
                     for ($i = 1; $i + $page <= $max_pages && $i <= $pagination_options; $i++) {
-                        echo '<a href=\'?page=' . $page + $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>' . $page + $i . '</a>';
+                        echo '<a href=\'?page=' . $page + $i . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\' tabindex=\'1\'>' . $page + $i . '</a>';
                     }
-                    echo '<a href=\'?page=' . $page + 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\'>></a>';
+                    echo '<a href=\'?page=' . $page + 1 . '&per_page=' . $per_page . '\' class=\'pagination-page pagination\' tabindex=\'1\'>></a>';
                 }
                 echo '</div>';
                 echo '<div class=\'select-div\'>';
