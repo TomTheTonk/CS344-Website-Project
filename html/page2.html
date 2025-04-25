@@ -1,53 +1,86 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="../css/root.css">
+    <link rel="stylesheet" type="text/css" href="../css/root.css">
+    <link rel="stylesheet" type="text/css" href="../css/file2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FAQ</title>
+
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
 </head>
 
-<body> 
-
+<body>
+    <a class="skip-to-content-link" href="#content" tabindex="1">Skip to content</a>
+    <a class="skip-to-content-link" href="../html/page5.html" tabindex="1">Accessibility Statement</a>
     <nav class="nav-side">
         <div class="side-scroll">
             <div class="side-nav-search">
-                <img src="../media/Logo.jpg" class="logo" alt="image"> 
+                <img src="../media/Logo.jpg" class="logo" alt="Advanced Manufacturing">
                 <h1> Advanced Manufacturing </h1>
             </div>
-
-            
 
         </div>
         <div class="menu-vertical">
             <ul>
-                <li class="nav-list"><a class="nav-link" href="home.html">Home</a></li>
-                <li class="nav-list"><a class="nav-link" href="page1.html">Our Approach to Outsourcing</a></li>
-                <li class="nav-list"><a class="nav-link" href="page2.html">FAQ</a></li>
-                <li class="nav-list"><a class="nav-link" href="../php/page3.php">Job Search</a></li>
-                <li class="nav-list"><a class="nav-link" href="page4.html">Contact Us</a></li>
+                <li class="nav-list"><a class="nav-link" href="home.html" tabindex="1">Home</a></li>
+                <li class="nav-list"><a class="nav-link" href="page1.html" tabindex="1">Our Approach to
+                        Outsourcing</a></li>
+                <li class="nav-list"><a class="nav-link" href="page2.html" tabindex="1">FAQ</a></li>
+                <li class="nav-list"><a class="nav-link" href="../php/page3.php" tabindex="1">Company Search</a></li>
+                <li class="nav-list"><a class="nav-link" href="page4.html" tabindex="1">Contact Us</a></li>
             </ul>
 
         </div>
     </nav>
 
   <section class="nav-content-wrap">
-
-    <header class="content-banner">
-      <button id="toggleNav" class="toggle-button">☰</button>               
-    </header>
-    <div class="content-header">
-        <h1>
-            Header
-        </h1>
-
-    </div>
+    <header class="content-banner">Frequently Asked Questions</header>
     <div class="content">
-        <p> Content 
-        </p>
+
+      <section class="FAQs" id="FAQs">
+
+        <!-- JS inserts FAQS here -->
+
+      </section>
+
+      <section class="questionForm">
+        <p>More questions? Fill out the form and we will get back to you!</p>
+        
+        <form id="formID" action="submitted.html">
+          <label for="nameField">Name:</label><br>
+          <input type="text" class="field" id="nameField">
+          <br><br>
+
+          <label for="emailField">Email:</label><span class="required">*</span><br>
+          <input type="email" class="field" id="emailField">
+          <br><br>
+
+          <label for="questionField">Your Question:</label><span class="required">*</span><br>
+          <textarea form="questionField"></textarea>
+          <br><br>
+
+          <div class="file-input" id="file-input">
+            <input type="file" class="file" id="file">
+          </div>
+
+          <br><br><br><br>
+
+          <button type="button" onclick="clearText()" class="button" id="clearBtn">Clear</button>
+          <input type="submit" class="button" id="submitBtn" value="Submit">
+        </form>
+      </section>
     </div>
+
   </section>
-
-
-
-  <script src="../js/toggleNav.js"></script>
+<script src="../js/base.js"></script>
+<script src="../js/clear-faq.js"></script>
+<script src="../js/faq-data.js"></script>
+<script src="../js/faq.js"></script>
+<script src="../js/toggleNav.js"></script>
 </body>
 
 </html>
