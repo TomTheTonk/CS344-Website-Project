@@ -46,6 +46,8 @@
         </header>
         <main id="content">
             <div class="content-header">
+                <div><h1>Company Search</h1></div>
+
                 <div>
                     <form action="" mehod="get">
 
@@ -59,8 +61,42 @@
             </div>
             <div class="companys-content">
                 <?php
+                //Required PHP files
+                require 'company.php';
+                require 'service.php';
+
+                //Quick sort function to sort array of companies
+                function quickSort($array) {
+                    $length = count($array);
+                
+                    if ($length <= 1) {
+                        return $array;
+                    } else {
+                        $pivot = $array[0];
+                        $left = $right = array();
+                
+                        for ($i = 1; $i < $length; $i++) {
+                            if (strcmp($array[$i]->get_name(), $pivot->get_name()) < 0) {
+                                $left[] = $array[$i];
+                            } else {
+                                $right[] = $array[$i];
+                            }
+                        }
+                
+                        return array_merge(
+                            quickSort($left), 
+                            array($pivot), 
+                            quickSort($right)
+                        );
+                    }
+                }
+                
+
+                //Load XML
                 $xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
                 $company_count = $xml->count();
+
+                //Variables to determine how many for loop body for company display
                 if (isset($_GET['per_page']) && !empty($_GET['per_page'])) {
                     $per_page = $_GET['per_page'];
                 } else {
@@ -73,7 +109,33 @@
                     $page = 1;
                 }
                 $left = true;
-                $company_array = $xml->COMPANY;
+
+                // Generates an array of all data in xml file
+                $company_xml = $xml->COMPANY;
+                $company_array = [];
+                foreach($company_xml as $company) {
+                    $company_object = new company();
+                    $company_object->set_name($company->NAME);
+                    $company_object->set_city($company->CITY);
+                    $company_object->set_state($company->STATE);
+                    $company_object->set_rating($company->RATING);
+                    $company_object->set_review_count($company->REVIEWS);
+                    $company_object->set_pitch($company->PITCH);
+                    $services_array = [];
+                    foreach($company->SERVICES->SERVICE as $service) {
+                        $service_object = new service();
+                        $service_object->set_main($service->MAIN);
+                        $service_object->set_sub($service->SUB);
+                        array_push($services_array, $service_object);
+                    }
+                    $company_object->set_services($services_array);
+                    array_push($company_array, $company_object);
+                    $company_object->set_cost_plan($company->COST_PLAN);
+                }
+
+                $company_array = quickSort($company_array);
+
+                // Loop to display all job data from the company_data array
                 for ($index_companies = ($page - 1) * $per_page; $index_companies < $page * $per_page && $index_companies < $company_count; $index_companies++) {
                     $company_data = $company_array[(int)$index_companies];
                     echo '<div class=\'company-details';
@@ -86,10 +148,10 @@
                     }
                     echo '\'>';
                     echo '<div class=\'company-header\'>';
-                    echo '<a href=\'\' class=\'company-link\'>' . $company_data->NAME . '</a>';
-                    echo '<div class=\'header-details\'>' . $company_data->CITY . ', ' . $company_data->STATE . '</div>';
+                    echo '<a href=\'\' class=\'company-link\'>' . $company_data->get_name() . '</a>';
+                    echo '<div class=\'header-details\'>' . $company_data->get_city() . ', ' . $company_data->get_state() . '</div>';
                     echo '<div class=\'header-details\'>';
-                    $rating = $company_data->RATING;
+                    $rating = $company_data->get_rating();
                     for ($index_rating = 0; $index_rating < 5; $index_rating++) {
                         if ($rating >= 1) {
                             echo '<span class=\'fa fa-star checked\'></span>';
@@ -98,11 +160,11 @@
                             echo '<span class=\'fa fa-star\'></span>';
                         }
                     }
-                    echo ' ' . $company_data->RATING . ' (' . $company_data->REVIEWS . ')</div>';
+                    echo ' ' . $company_data->get_rating() . ' (' . $company_data->get_review_count() . ')</div>';
                     echo '</div>';
                     echo '<div class=\'company-section\'>';
                     echo '<div class=\'section-header\'>Description</div>';
-                    $pitch_array = explode("\n", $company_data->PITCH);
+                    $pitch_array = explode("\n", $company_data->get_pitch());
                     for ($index_pitch = 0; $index_pitch < count($pitch_array); $index_pitch++) {
                         if ($index_pitch != count($pitch_array) - 1) {
                             echo '<div class=\'section-body\'>' . $pitch_array[$index_pitch] . '</div>';
@@ -114,9 +176,9 @@
                     echo '<div class=\'company-section\'>';
                     echo '<div class=\'section-header\'>Services</div>';
                     echo '<ul class=\'services-list\'>';
-                    foreach ($company_data->SERVICES->SERVICE as $service_data) {
-                        echo '<li class=\'service-section-header no-bullet\'>' . $service_data->MAIN . '</li>';
-                        $services_array = explode("\n", $service_data->SUB);
+                    foreach ($company_data->get_services() as $service_data) {
+                        echo '<li class=\'service-section-header no-bullet\'>' . $service_data->get_main() . '</li>';
+                        $services_array = explode("\n", $service_data->get_sub());
                         foreach ($services_array as $service) {
                             echo '<li class=\'service-sub\'>' . $service . '</li>';
                         }
@@ -125,7 +187,7 @@
                     echo '</div>';
                     echo '<div class=\'company-section\'>';
                     echo '<div class=\'section-header\'>Pricing</div>';
-                    $pricing_array = explode("\n", $company_data->COST_PLAN);
+                    $pricing_array = explode("\n", $company_data->get_cost_plan());
                     echo '<div class=\'section-body\'>Starting at ' . $pricing_array[0] . '</div>';
                     if (1 < count($pricing_array)) {
                         echo '<div class=\'section-body\'>' . $pricing_array[1] . '</div>';
