@@ -59,10 +59,42 @@
             </div>
             <div class="companys-content">
                 <?php
+                //Required PHP files
                 require 'company.php';
                 require 'service.php';
+
+                //Quick sort function to sort array of companies
+                function quickSort($array) {
+                    $length = count($array);
+                
+                    if ($length <= 1) {
+                        return $array;
+                    } else {
+                        $pivot = $array[0];
+                        $left = $right = array();
+                
+                        for ($i = 1; $i < $length; $i++) {
+                            if (strcmp($array[$i]->get_name(), $pivot->get_name()) < 0) {
+                                $left[] = $array[$i];
+                            } else {
+                                $right[] = $array[$i];
+                            }
+                        }
+                
+                        return array_merge(
+                            quickSort($left), 
+                            array($pivot), 
+                            quickSort($right)
+                        );
+                    }
+                }
+                
+
+                //Load XML
                 $xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
                 $company_count = $xml->count();
+
+                //Variables to determine how many for loop body for company display
                 if (isset($_GET['per_page']) && !empty($_GET['per_page'])) {
                     $per_page = $_GET['per_page'];
                 } else {
@@ -77,9 +109,9 @@
                 $left = true;
 
                 // Generates an array of all data in xml file
-                $company_array = $xml->COMPANY;
-                $new_array = [];
-                foreach($company_array as $company) {
+                $company_xml = $xml->COMPANY;
+                $company_array = [];
+                foreach($company_xml as $company) {
                     $company_object = new company();
                     $company_object->set_name($company->NAME);
                     $company_object->set_city($company->CITY);
@@ -95,15 +127,15 @@
                         array_push($services_array, $service_object);
                     }
                     $company_object->set_services($services_array);
-                    array_push($new_array, $company_object);
+                    array_push($company_array, $company_object);
                     $company_object->set_cost_plan($company->COST_PLAN);
                 }
 
-                $service = $new_array[0]->get_services();
+                $company_array = quickSort($company_array);
 
                 // Loop to display all job data from the company_data array
                 for ($index_companies = ($page - 1) * $per_page; $index_companies < $page * $per_page && $index_companies < $company_count; $index_companies++) {
-                    $company_data = $new_array[(int)$index_companies];
+                    $company_data = $company_array[(int)$index_companies];
                     echo '<div class=\'company-details';
                     if ($left) {
                         echo ' left';
