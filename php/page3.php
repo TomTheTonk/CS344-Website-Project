@@ -46,6 +46,8 @@
         </header>
         <main id="content">
             <div class="content-header">
+                <div><h1>Company Search</h1></div>
+
                 <div>
                     <form action="" mehod="get">
 
