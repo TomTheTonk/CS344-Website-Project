@@ -49,16 +49,6 @@
             <div class="content-header">
                 <div><h1>Company Search</h1></div>
 
-                <div>
-                    <form action="" mehod="get">
-
-                        <input type="text" class="company-search-box" name="company-keyword" autocomplete="off" tabindex="1">
-
-
-                        <input type="submit" class="search-submit">
-                    </form>
-                </div>
-
             </div>
             <div class="companys-content">
                 <?php
