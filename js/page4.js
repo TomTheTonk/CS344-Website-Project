@@ -1,5 +1,5 @@
 // Assume your form has an id="myForm"
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("formID");
     const customer =document.getElementById("CustName");
     const address = document.getElementById("add");
@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = document.getElementById("PerEmail");
     const department = document.getElementById("dept");
     const description = document.getElementById("dscption");
+
     
   
     form.addEventListener("submit", function (event) {
@@ -24,9 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Safe to continue — either submit normally or redirect
         event.preventDefault();
         window.location.href = "submitted.html"; // optional
-        
-       
-        
-          
       });
   });
+
+ 

@@ -1,3 +1,28 @@
+/* Override the content-banner element just for this page, I dont like the whitespace at the top*/
+.content-banner{
+    background: hsla(180, 100%, 30%, 1);
+
+    background: linear-gradient(225deg, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(0, 3%, 20%, 1) 100%);
+    
+    background: -moz-linear-gradient(225deg, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(0, 3%, 20%, 1) 100%);
+    
+    background: -webkit-linear-gradient(225deg, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(0, 3%, 20%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#009999", endColorstr="#009999", GradientType=1 );
+    width: 100%;         
+    min-height: 100px;  
+    margin: 20px 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center; 
+    
+    
+}
 
 /*Link stuff */
 a:hover {
@@ -111,7 +136,7 @@ form input[type="submit"] {
     padding: 5px;
 }
 
-
+/*Submit Button Stuff */
 form input[type="submit"] {
     background-color: lightpink;
     padding: 7px;
@@ -126,8 +151,8 @@ form input[type="submit"]:hover {
 /*THis is the footer section of css */
 footer {
     padding: 10px;
-    border: 3px solid lightgray;
-    background-color: black;
+    border: 1px solid black;
+    background-color: #2d2d2d;
     color: white;
 }
 
