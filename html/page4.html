@@ -51,7 +51,7 @@
 
    
     
-        <form id="formID" method="post" >
+        <form id="formID" action="submitted.html">
           <fieldset>
 
             <h1 class="ContactInfoHeader"> Contact Info</h1>  
@@ -93,23 +93,23 @@
                  
                   <div class="formDiv">
                     <label for="CustName"> Customer Info </label>
-                    <input id="CustName" type="text" name="Client" placeholder="Enter Name">
+                    <input id="CustName" type="text" placeholder="Enter Name">
                   </div>
                   <div class="formDiv">
                     <label for="add"> Address </label>
-                    <input id="add" type="text" name="Address" placeholder="Enter Address">
+                    <input id="add" type="text" placeholder="Enter Address">
                   </div>
                   <div class="formDiv">
                     <label for="PhnNumber"> Phone Number </label>
-                    <input id="PhnNumber" type="tel" name="Phone Number" placeholder="890-440-3289 (Optional)">
+                    <input id="PhnNumber" type="tel" placeholder="890-440-3289 (Optional)">
                   </div>
                   <div class="formDiv">
                     <label for="PerEmail"> Personal Email </label>
-                    <input id="PerEmail" type="email" name="Email" placeholder="Ex: butter@gmail.com">
+                    <input id="PerEmail" type="email" placeholder="Ex: butter@gmail.com">
                   </div>
                   <div class="formDiv">
                     <label for="dept"> Department</label>
-                    <select id="dept" name="Department">
+                    <select id="dept">
                            <option>None</option>
                            <option>Customer Service</option>
                            <option>Retail</option>
@@ -120,8 +120,7 @@
                 
                     <div class="formDiv">
                       <label for="dscption">Description</label>
-                 
-                      <input id="dscption" class="DescriptionInputBox"type="text" name="Description" placeholder="Enter Text Here">
+                      <textarea id="dscption" form="questionField"></textarea>
                     </div>
                   
                     <div class="formDiv"> 
