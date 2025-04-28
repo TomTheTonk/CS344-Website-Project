@@ -1,50 +1,62 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 
 <head>
   <link rel="stylesheet" type="text/css" href="../css/root.css">
-  <link rel="stylesheet" type="text/css" href="../css/file4.css">
-  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="../css/file4css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Contact Us</title>
+  <!-- Use "Defer" to ensure that the script only runs after the DOM is ready-->
+  <script src="base.js" defer></script>
   <meta name="description" content="Contact Us Page">
   <meta name="keywords" content="Contact Us, Form Submit, Help for You">
-
+  <meta name="author" content="John Doe">
+  <meta charset="UTF-8">
 </head>
 
-<body> 
-    <nav class="nav-side">
-        <div class="side-scroll">
-            <div class="side-nav-search">
-                <img src="../media/Logo.jpg" class="logo" alt="image"> 
-                <h1> Advanced Manufacturing </h1>
-            </div>
+<body>
+  <a class="skip-to-content-link" href="#content" tabindex="1">Skip to content</a>
+  <a class="skip-to-content-link" href="../html/page5.html" tabindex="1">Accessibility Statement</a>
+  <nav class="nav-side">
+    <div class="side-scroll">
+      <div class="side-nav-search">
+        <img src="../media/Logo.jpg" class="logo" alt="Advanced Manufacturing">
+        <h1> Advanced Manufacturing </h1>
+      </div>
 
-            
 
-        </div>
-        <div class="menu-vertical">
-            <ul>
-                <li class="nav-list"><a class="nav-link" href="home.html">Home</a></li>
-                <li class="nav-list"><a class="nav-link" href="page1.html">Our Approach to Outsourcing</a></li>
-                <li class="nav-list"><a class="nav-link" href="page2.html">FAQ</a></li>
-                <li class="nav-list"><a class="nav-link" href="../php/page3.php">Company Search</a></li>
-                <li class="nav-list"><a class="nav-link" href="page4.html">Contact Us</a></li>
-            </ul>
 
-        </div>
-    </nav>
+
+    </div>
+    <div class="menu-vertical">
+      <ul>
+        <li class="nav-list"><a class="nav-link" href="home.html" tabindex="1">Home</a></li>
+        <li class="nav-list"><a class="nav-link" href="page1.html" tabindex="1">Our Approach to
+            Outsourcing</a></li>
+        <li class="nav-list"><a class="nav-link" href="page2.html" tabindex="1">FAQ</a></li>
+        <li class="nav-list"><a class="nav-link" href="../php/page3.php" tabindex="1">Company Search</a></li>
+        <li class="nav-list"><a class="nav-link" href="page4.html" tabindex="1">Contact Us</a></li>
+      </ul>
+
+    </div>
+  </nav>
 
 
   <section class="nav-content-wrap">
-      <!--Use an id, as a class returns a collection instead of 1 single unique element-->
-
-      <header class="content-banner">
-        <button id="toggleNav" class="toggle-button">☰</button>   
+    <!--Use an id, as a class returns a collection instead of 1 single unique element-->
+    <header class="content-banner">
+      <button id="toggleNav" class="toggle-button">&#9776;</button> 
     </header>
+
    
     
         <form id="formID" action="submitted.html" method="" >
           <fieldset>
 
             <h1 class="ContactInfoHeader"> Contact Info</h1>  
+
             <section id="gridSection">
               <div class="ContactDiv">
                 <p>Cole</p>
@@ -75,6 +87,7 @@
               <p>Email: <a class="P4Link"  href="https://www.w3schools.com">Email</a></p>
             </div>
          </section>
+
           
          <p class="HeadFormThing"><b>Need Something Else? Submit a Form Below</b></p>
                 <section class="FormPara">
@@ -106,7 +119,7 @@
                     </select>
                   </div>
                     <!-- 
-                    <label>Status</label>
+      <label>Status</label>
                     <input type="radio" name="type" value="Pending "> Pending
                     <input type="radio" name="type" value="Processing "> Processing
                     <input type="radio" name="type" value="Shipped "> Shipped
@@ -133,9 +146,9 @@
     <footer>
       <p>Copyright: <a class="P4Links" href="copyrightPage.html">©2025, Advanced Manufacturing. All Rights Reserved.</a></p>
 
-  </footer>    
-        
-  
+    </footer>
+
+
   </section>
 
 
