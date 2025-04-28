@@ -37,9 +37,9 @@
 
   <section class="nav-content-wrap">
 
-    <header class="content-banner">
-        <button id="toggleNav" class="toggle-button">☰</button> 
-    </header>
+  <div class="content-banner">
+                <button id="toggleNav" class="toggle-button">&#9776;</button>   
+            </div>
     <div class="content-header">
         <div>
             <form action="" mehod="get">
@@ -88,6 +88,7 @@
                 for ($index_rating = 0; $index_rating < 5; $index_rating++) {
                     if ($rating >= 1) {
                         echo'<span class=\'fa fa-star checked\'></span>';
+                        
                         $rating--;
                     } else {
                         echo'<span class=\'fa fa-star\'></span>';
