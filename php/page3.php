@@ -43,7 +43,7 @@
         <section class="nav-content-wrap">
 
             <header class="content-banner">
-                <button id="toggleNav" class="toggle-button fa fa-bars"></button>
+                <button id="toggleNav" class="toggle-button fa fa-bars">&#9776;</button>
             </header>
             <div class="content-header" id="content">
                 <div>
@@ -95,6 +95,7 @@
                 } else {
                     $per_page = 2;
                 }
+
                 $max_pages = round($company_count / $per_page);
                 if (isset($_GET['page']) && !empty($_GET['page'])) {
                     $page = $_GET['page'] > $max_pages ? $max_pages : $_GET['page'];
@@ -120,6 +121,7 @@
                         $service_object->set_main($service->MAIN);
                         $service_object->set_sub($service->SUB);
                         array_push($services_array, $service_object);
+
                     }
                     $company_object->set_services($services_array);
                     array_push($company_array, $company_object);
