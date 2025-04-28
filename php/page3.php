@@ -12,6 +12,7 @@
     <meta name="description" content="Discover wonderful business partners to help your business run smoother and improve productivity.">
     <meta name="keywords" content="outsource, out source, company, advanced manufacturing, oursourcing, marketing, fabrication, support, management">
     <meta name="author" content="Allen Martin">
+    <meta charset="UTF-8">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
         </div>
         <div class="menu-vertical">
             <ul>
-                <li class="nav-list"><a class="nav-link" href="../html/home.html"  tabindex="1">Home</a></li>
+                <li class="nav-list"><a class="nav-link" href="../html/home.html" tabindex="1">Home</a></li>
                 <li class="nav-list"><a class="nav-link" href="../html/page1.html" tabindex="1">Our Approach to Outsourcing</a></li>
                 <li class="nav-list"><a class="nav-link" href="../html/page2.html" tabindex="1">FAQ</a></li>
                 <li class="nav-list"><a class="nav-link" href="page3.php" tabindex="1">Company Search</a></li>
@@ -38,24 +39,15 @@
 
         </div>
     </nav>
+    <main>
+        <section class="nav-content-wrap">
 
-    <section class="nav-content-wrap">
-
-        <header class="content-banner">
-            <button id="toggleNav" class="toggle-button fa fa-bars"></button>
-        </header>
-        <main id="content">
-            <div class="content-header">
-                <div><h1>Company Search</h1></div>
-
+            <header class="content-banner">
+                <button id="toggleNav" class="toggle-button fa fa-bars"></button>
+            </header>
+            <div class="content-header" id="content">
                 <div>
-                    <form action="" mehod="get">
-
-                        <input type="text" class="company-search-box" name="company-keyword" autocomplete="off" tabindex="1">
-
-
-                        <input type="submit" class="search-submit">
-                    </form>
+                    <h1>Company Search</h1>
                 </div>
 
             </div>
@@ -66,15 +58,16 @@
                 require 'service.php';
 
                 //Quick sort function to sort array of companies
-                function quickSort($array) {
+                function quickSort($array)
+                {
                     $length = count($array);
-                
+
                     if ($length <= 1) {
                         return $array;
                     } else {
                         $pivot = $array[0];
                         $left = $right = array();
-                
+
                         for ($i = 1; $i < $length; $i++) {
                             if (strcmp($array[$i]->get_name(), $pivot->get_name()) < 0) {
                                 $left[] = $array[$i];
@@ -82,15 +75,15 @@
                                 $right[] = $array[$i];
                             }
                         }
-                
+
                         return array_merge(
-                            quickSort($left), 
-                            array($pivot), 
+                            quickSort($left),
+                            array($pivot),
                             quickSort($right)
                         );
                     }
                 }
-                
+
 
                 //Load XML
                 $xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
@@ -113,7 +106,7 @@
                 // Generates an array of all data in xml file
                 $company_xml = $xml->COMPANY;
                 $company_array = [];
-                foreach($company_xml as $company) {
+                foreach ($company_xml as $company) {
                     $company_object = new company();
                     $company_object->set_name($company->NAME);
                     $company_object->set_city($company->CITY);
@@ -122,7 +115,7 @@
                     $company_object->set_review_count($company->REVIEWS);
                     $company_object->set_pitch($company->PITCH);
                     $services_array = [];
-                    foreach($company->SERVICES->SERVICE as $service) {
+                    foreach ($company->SERVICES->SERVICE as $service) {
                         $service_object = new service();
                         $service_object->set_main($service->MAIN);
                         $service_object->set_sub($service->SUB);
@@ -241,9 +234,8 @@
                 echo '</div>';
                 ?>
             </div>
-        </main>
-    </section>
-
+        </section>
+    </main>
 
 
     <script src="../js/toggleNav.js"></script>
