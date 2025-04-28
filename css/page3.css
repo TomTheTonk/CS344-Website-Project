@@ -194,4 +194,34 @@
         margin-top: 5%;
         margin-bottom: 2.5%;
     }
+    .nav-content-wrap div.select-div {
+        padding-left: 3em;
+        }
+}
+
+@media (max-width: 698px) {
+    .company-details {
+        border-style: solid;
+        border-radius: 2em;
+        padding-bottom: .25em;
+        width: 89%;
+    }
+
+    .left {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+    
+    .right {
+        margin-left: auto;
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 2.5%;
+    }
+    .nav-content-wrap div.select-div {
+        padding-left: 3.5em;
+        float: inline-start;
+        }
 }
