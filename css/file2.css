@@ -1,0 +1,145 @@
+
+.nav-content-wrap div { /* overrides style from root.css */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content {
+    padding-top: 3em;
+}
+
+/* FAQ section */
+
+.FAQs p {
+    font-weight: normal;
+}
+
+#FAQS {
+    text-align: left;
+    margin: 0;
+    padding: 0 2em 0 2em;
+}
+
+.oneFAQ p {
+    margin: 0;
+    padding: 1em 2em;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(241, 241, 241);
+}
+
+.collapsible {
+    background-color: rgb(211, 211, 211);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    font-family: serif;
+}
+  
+.collapsible:hover {
+    background-color: rgb(169, 169, 169);
+}
+
+.collapsible.active + p {
+    display: block;
+}
+
+.collapsible:after {
+    content: '\02795'; /* + */
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+}
+  
+  .active:after {
+    content: "\2796"; /* - */
+}
+
+/* form section */
+
+.questionForm {
+    padding: 2em 2em 1em 2em;
+}
+
+.questionForm p {
+    font-weight: bold;
+}
+
+input {
+    width: 20%;
+}
+
+.required {
+    padding: 5px;
+    color: red;
+}
+
+.button {
+    width: 10%;
+    color: black;
+}
+
+/* "add screenshot" button styling - decided not to use */
+/*
+#file-input {
+    padding-left: 0;
+}
+
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: static;
+}
+
+.file-input label {
+    width: 100px;
+    height: 25px;
+    background-color: lightgray;
+    border: 1px solid darkslategray;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+input:hover + label, input:focus + label {
+    background-color: darkgray;
+}
+*/
+
+#clearBtn {
+    background-color: rgb(247, 158, 148);
+    border: 1px solid maroon;
+    border-radius: 5px;
+}
+
+#clearBtn:hover {
+  background-color: lightcoral;
+}
+
+#clearBtn:focus {
+  box-shadow: red 0 0 0 3px;
+  outline: none;
+}
+
+#submitBtn {
+    background-color: rgb(139, 205, 139);
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+#submitBtn:hover {
+  background-color: darkseagreen;
+}
+
+#submitBtn:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}

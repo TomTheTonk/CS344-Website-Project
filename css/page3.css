@@ -19,7 +19,7 @@
 }
 
 .companys-content {
-    
+
     padding: none;
     --section-padding: .5em;
     display: flex;
@@ -87,7 +87,6 @@
 
 .sub-section-header {
     font-weight: bold;
-    color: #84807F;
     padding-bottom: .2em;
 }
 
@@ -101,7 +100,6 @@
 
 .service-section-header {
     font-weight: bold;
-    color: #84807F;
     padding-top: .2em;
     font-size: 1.1em
 }
@@ -164,12 +162,13 @@
     font-weight: bold;
     background-color: rgb(222, 222, 222);
     border: none;
+    border-radius: 0.5em;
 }
 
-.nav-content-wrap div.page-selector{
+.nav-content-wrap div.page-selector {
     padding-right: 0;
 }
 
-.nav-content-wrap div.select-div{
+.nav-content-wrap div.select-div {
     padding-left: 0;
 }
