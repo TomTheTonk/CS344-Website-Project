@@ -84,10 +84,51 @@
                     }
                 }
 
-
                 //Load XML
-                $xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
-                $company_count = $xml->count();
+                //$xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
+                //$company_count = $xml->count();
+
+                $json_object = file_get_contents('../json/company_data.json', 'company_data.json');
+
+                if ($json_object === false) {
+                    die('Error reading the JSON file');
+                }
+
+                $json_data = json_decode($json_object, true);
+
+                if ($json_data === null) {
+                    die('Error decoding the JSON file');
+                }
+
+                //print_r($json_data);
+
+                // Generates an array of all data in xml file
+                $company_array = [];
+                foreach ($json_data['COMPANY_DATA'] as $company_data) {
+                    foreach ($company_data as $company) {
+                        $company_object = new company();
+                        $company_object->set_name($company['NAME']);
+                        $company_object->set_city($company['CITY']);
+                        $company_object->set_state($company['STATE']);
+                        $company_object->set_rating($company['RATING']);
+                        $company_object->set_review_count($company['REVIEWS']);
+                        $company_object->set_pitch($company['PITCH']);
+                        $services_array = [];
+                        $service_index = 0;
+                        $json_services_array = $company['SERVICES'];
+                        foreach ($json_services_array['SERVICE'] as $service) {
+                            $service_object = new service();
+                            $service_object->set_main($service['MAIN']);
+                            $service_object->set_sub($service['SUB']);
+                            array_push($services_array, $service_object);
+                        }
+                        $company_object->set_services($services_array);
+                        $company_object->set_cost_plan($company['COST_PLAN']);
+                        array_push($company_array, $company_object);
+                    }
+                }
+
+                $company_count = count($company_array);
 
                 //Variables to determine how many for loop body for company display
                 if (isset($_GET['per_page']) && !empty($_GET['per_page'])) {
@@ -104,6 +145,7 @@
                 }
                 $left = true;
 
+                /*
                 // Generates an array of all data in xml file
                 $company_xml = $xml->COMPANY;
                 $company_array = [];
@@ -127,6 +169,7 @@
                     array_push($company_array, $company_object);
                     $company_object->set_cost_plan($company->COST_PLAN);
                 }
+                */
 
                 $company_array = quickSort($company_array);
 
