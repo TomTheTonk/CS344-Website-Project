@@ -42,9 +42,9 @@
     <main>
         <section class="nav-content-wrap">
 
-            <header class="content-banner">
-                <button id="toggleNav" class="toggle-button fa fa-bars">&#9776;</button>
-            </header>
+            <div class="content-banner">
+                <button id="toggleNav" class="toggle-button">&#9776;</button>
+</div>
             <div class="content-header" id="content">
                 <div>
                     <h1>Company Search</h1>
