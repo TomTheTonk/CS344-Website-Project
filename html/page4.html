@@ -7,6 +7,9 @@
 
 
   <link rel="stylesheet" type="text/css" href="../css/file4.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>Contact Us</title>
   <!-- Use "Defer" to ensure that the script only runs after the DOM is ready-->
   <meta name="description" content="Contact Us Page">
@@ -37,6 +40,7 @@
         <li class="nav-list"><a class="nav-link" href="page2.html" tabindex="1">FAQ</a></li>
         <li class="nav-list"><a class="nav-link" href="../php/page3.php" tabindex="1">Company Search</a></li>
         <li class="nav-list"><a class="nav-link" href="page4.html" tabindex="1">Contact Us</a></li>
+        <li class="nav-list"><a class="nav-link" href="copyrightPage.html" tabindex="1">Copyright Page</a></li>
       </ul>
 
     </div>
@@ -93,7 +97,7 @@
                 <section class="FormPara">
                  
                   <div class="formDiv">
-                    <label for="CustName"> Customer Info </label>
+                    <label for="CustName"> Customer Name <span class="required">*</span> </label>
                     <input id="CustName" type="text" placeholder="Enter Name">
                   </div>
                   <div class="formDiv">
@@ -105,7 +109,7 @@
                     <input id="PhnNumber" type="tel" placeholder="890-440-3289 (Optional)">
                   </div>
                   <div class="formDiv">
-                    <label for="PerEmail"> Personal Email </label>
+                    <label for="PerEmail"> Personal Email<span class="required">*</span> </label>
                     <input id="PerEmail" type="email" placeholder="Ex: butter@gmail.com">
                   </div>
                   <div class="formDiv">
@@ -119,8 +123,8 @@
                     </select>
                   </div>
             
-                    <div class="formDiv">
-                      <label for="dscption">Description (1000 Character Limit)</label>
+                    <div class="formDiv"> 
+                      <label for="dscption" >Description (1000 Character Limit)<span class="required">*</span></label>
                       <textarea id="dscption" form="questionField" maxlength="1000"></textarea>
                     </div>
 
@@ -147,7 +151,7 @@
 
 
   <script src="../js/toggleNav.js"></script>
-  <script> src="../js/page4.js"</script>
+  <script src="../js/page4.js"></script>
 </body>
 
 
