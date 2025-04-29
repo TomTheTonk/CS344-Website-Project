@@ -15,8 +15,21 @@
     padding-top: 1em;
 }
 
+li {
+    margin-left: 1em;
+}
+
+ul h1 {
+    margin-top: 0.5em;
+}
+
 li p {
-    padding: 1em;
+    padding-left: 1em;
+}
+
+ul {
+    padding-bottom: 0.5em;
+    border: 1px solid rgb(205, 212, 212);
 }
 
 .pro {
@@ -24,5 +37,17 @@ li p {
 }
 
 .con {
-    list-style-type: "\2796"; /* - */
+    list-style-type: '\2796'; /* - */
+}
+
+.pc-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.pc-container > ul {
+    background-color: rgb(241, 245, 245);
+    padding: 1em;
+    width: 90%;
+    text-align: left;
 }

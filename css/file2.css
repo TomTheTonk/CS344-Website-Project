@@ -7,8 +7,8 @@
 }
 
 .nav-content-wrap div { /* overrides style from root.css */
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .content {
@@ -24,19 +24,18 @@
 #FAQS {
     text-align: left;
     margin: 0;
-    padding: 0 2em 0 2em;
 }
 
 .oneFAQ p {
-    margin: 0;
+    margin-top: 0;
     padding: 1em 2em;
     display: none;
     overflow: hidden;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(241, 245, 245);
 }
 
 .collapsible {
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(224, 231, 231);
     color: black;
     cursor: pointer;
     padding: 18px;
@@ -46,14 +45,22 @@
     outline: none;
     font-size: 1em;
     font-family: serif;
+    border-bottom: 1px solid rgb(205, 212, 212);
 }
   
 .collapsible:hover {
-    background-color: rgb(169, 169, 169);
+    background-color: rgb(205, 212, 212);
+}
+
+.collapsible.active {
+    border: 1px solid rgb(205, 212, 212);
+    border-bottom: none;
 }
 
 .collapsible.active + p {
     display: block;
+    border: 1px solid rgb(205, 212, 212);
+    border-top: none;
 }
 
 .collapsible:after {
@@ -68,12 +75,12 @@
 }
 
 /* form section */
-
+/*
 .questionForm {
     padding: 2em 2em 1em 2em;
 }
 
-.questionForm p {
+.questionForm h3 {
     font-weight: bold;
 }
 
@@ -90,7 +97,7 @@ input {
     width: 10%;
     color: black;
 }
-
+*/
 /* "add screenshot" button styling - decided not to use */
 /*
 #file-input {
@@ -120,7 +127,7 @@ input:hover + label, input:focus + label {
     background-color: darkgray;
 }
 */
-
+/*
 #clearBtn {
     background-color: rgb(247, 158, 148);
     border: 1px solid maroon;
@@ -150,3 +157,4 @@ input:hover + label, input:focus + label {
   box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
   outline: none;
 }
+*/
