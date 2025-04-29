@@ -1,5 +1,5 @@
 
-.nav-content-wrap div { /* overrides style from root.css */
+.nav-content-wrap main div { /* overrides style from root.css */
     padding-left: 0;
     padding-right: 0;
 }

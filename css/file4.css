@@ -1,3 +1,28 @@
+/* Override the content-banner element just for this page, I dont like the whitespace at the top*/
+.content-banner{
+    background: hsla(180, 100%, 30%, 1);
+
+    background: linear-gradient(225deg, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(0, 3%, 20%, 1) 100%);
+    
+    background: -moz-linear-gradient(225deg, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(0, 3%, 20%, 1) 100%);
+    
+    background: -webkit-linear-gradient(225deg, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(180, 100%, 30%, 1) 0%, hsla(0, 3%, 20%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#009999", endColorstr="#009999", GradientType=1 );
+    width: 100%;         
+    min-height: 100px;  
+    margin: 20px 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center; 
+    
+    
+}
 
 /*Link stuff */
 a:hover {
@@ -6,7 +31,6 @@ a:hover {
 a {
     color: black;
 }
-
 
 /*Stuff for form*/
 #formID {
@@ -19,26 +43,32 @@ a {
     text-align: center;
 }
 
-
-/* Paragraph before grid stuff*/
+/*Label/Header before grid stuff*/
 
 .ContactInfoHeader {
     padding: 5px;
     margin-bottom: 0px;
-    background-color: black;
+
+    background-color: #36454F;
+    border: 2px solid black;
     color: white;
 }
+
+.ContactInfoHeader {
+    text-align: center;
+}
+
 /* Grid seciton in form*/
 #gridSection {
     display: grid;
     grid-template-columns: auto auto;
-    border: 3px solid black;
+
+    border: 2px solid #36454F;
+
 }
     
 /*Contact info stuff */
-.ContactInfoHeader {
-    text-align: center;
-}
+
 div .ContactDiv {
     padding: 5px;
     
@@ -46,8 +76,7 @@ div .ContactDiv {
 
 .ContactDiv{
     background-color: #FAF9F6;
-    border: 1px solid black;
-   
+    border: 1px solid #36454F;
 }
 
 .ContactDiv p {
@@ -58,18 +87,20 @@ div .ContactDiv {
 }
 
 /*Paragraph before Form Seciton */
-.HeadFormThing {
+.HeadFormThing{
+
+    font-size: 22px;
     padding: 5px;
     margin-bottom: 0px;
-    background-color: black;
+    background-color: #36454F;
     color: white;
-    
+    border: 2px solid black; 
+
 }
 
 /*Form Seciton stuff */
 .FormPara {
-   
-    border: 3px solid black;
+    border: 2px solid #36454F;
     background-color: #FAF9F6;
 }
 
@@ -80,7 +111,7 @@ div .ContactDiv {
 
 label {
     color: black;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     padding: 5px;
     margin-top: 5px;
@@ -88,13 +119,20 @@ label {
 }
 
 input {
-    padding: 5px;
-    width: 50%;
-    max-width: 50%;
+    padding: 4px;
+    width: 30%;
+    max-width: 40%;
     margin-bottom: 10px;
 }
+ /*Specifically for the department select */
+ #dept {
+    padding: 5px;
+    max-width: 90%;
+}
 
-form input[class="submit"] {
+/* */
+
+form input[type="submit"] {
     width: 30%;
     display: block;
 }
@@ -103,7 +141,7 @@ form input[class="submit"] {
     padding: 5px;
 }
 
-
+/*Submit Button Stuff */
 form input[type="submit"] {
     background-color: lightpink;
     padding: 7px;
@@ -118,8 +156,8 @@ form input[type="submit"]:hover {
 /*THis is the footer section of css */
 footer {
     padding: 10px;
-    border: 3px solid lightgray;
-    background-color: black;
+    border: 1px solid black;
+    background-color: #2d2d2d;
     color: white;
 }
 
@@ -128,4 +166,126 @@ footer a:hover {
 }
 footer a {
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-side {
+      position: absolute;
+      width: 175px;
+      z-index: 999;
+    }
+
+    .nav-content-wrap {
+        margin-left: 0; 
+        transition: width .3s ease;
+        
+      }
+        
+    
+      .nav-side.collapsed {
+        transform: translateX(-100%); 
+        transition: width .0s ease;
+      }
+    
+      .nav-side {
+        transform: translateX(0); 
+        transition: width .0s ease;
+        position: fixed;
+    
+      }
+    /*This is the A Section, that holds the "Advanced Manu" thing */
+
+      .side-nav-search{
+        background-color: white;
+        color: #343131;
+    }
+    .side-nav-search h1 {
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+      /*Header before the contact info */
+      .ContactInfoHeader {
+        font-size: 17px;
+        padding: 3px;
+        margin-bottom: 0px;
+        background-color: #36454F;
+        border: 2px solid black;
+        color: white;
+    }
+
+      /* Grid seciton in form*/
+    #gridSection {
+        display: grid;
+        grid-template-columns: auto;
+
+        border: 2px solid #36454F;
+
+    }
+    /* Change the font size of the Paragraphs in the COntactDivs*/
+      .ContactDiv p {
+        color: black;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 3px;
+        display: block;
+    }
+    /* Form stuff below*/
+    .FormPara {
+        align-items: center;
+        border: 2px solid #36454F;
+        background-color: #FAF9F6;
+    }
+    /*For the header seciton of the form */
+    .HeadFormThing{
+        font-size: 15px;
+        padding: 3px;
+        margin-bottom: 0px;
+        background-color: #36454F;
+        color: white;
+        border: 2px solid black; 
+    }
+
+    input {
+        font-size: 10px;
+        padding: 2px;
+        width: 50%;
+        max-width: 50%;
+        margin-bottom: 10px;
+    }
+    /*Specifically for the department select */
+    #dept {
+       
+        padding: 2px;
+        font-size: 10px;
+        max-width: 30%;
+    }
+    
+    /*Specifically for the description text box */
+   
+    #dscption {
+        max-width: 30%;
+    }
+
+    label {
+        font-size: 13px;
+        color: black;
+        font-weight: bold;
+        padding: 3px;
+        margin-top: 5px;
+        
+        display: block;
+    }
+
+    /* Stuff for the footer*/
+    footer {
+        font-size: 9px;
+        padding: 5px;
+        border: 1px solid black;
+        background-color: #2d2d2d;
+        color: white;
+    }
+ 
+    
 }
