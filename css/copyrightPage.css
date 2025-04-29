@@ -6,3 +6,50 @@
     background-color: whitesmoke;
 padding: 10px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .nav-side {
+      position: absolute;
+      width: 175px;
+      z-index: 999;
+    }
+
+    .nav-content-wrap {
+        margin-left: 0; 
+        transition: width .3s ease;
+        
+      }
+        
+    
+      .nav-side.collapsed {
+        transform: translateX(-100%); 
+        transition: width .0s ease;
+      }
+    
+      .nav-side {
+        transform: translateX(0); 
+        transition: width .0s ease;
+        position: fixed;
+    
+      }
+    /*This is the A Section, that holds the "Advanced Manu" thing */
+
+      .side-nav-search{
+        background-color: white;
+        color: #343131;
+    }
+    .side-nav-search h1 {
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    .container {
+        text-align: center;
+        background-color: whitesmoke;
+        padding: 10px;
+    }
+
+
+}

@@ -4,14 +4,15 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="../css/root.css">
-  <link rel="stylesheet" type="text/css" href="../css/file4css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="../css/file4.css">
+"stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Contact Us</title>
   <!-- Use "Defer" to ensure that the script only runs after the DOM is ready-->
-  <script src="base.js" defer></script>
   <meta name="description" content="Contact Us Page">
   <meta name="keywords" content="Contact Us, Form Submit, Help for You">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="Cole Graves">
   <meta charset="UTF-8">
 </head>
 
@@ -52,7 +53,7 @@
 
    <main>
     
-        <form id="formID" target="_blank" action="https://www.randyconnolly.com/tests/process.php" method="post" >
+        <form id="formID" action="submitted.html">
           <fieldset>
 
             <h1 class="ContactInfoHeader"> Contact Info</h1>  
@@ -61,15 +62,15 @@
               <div class="ContactDiv">
                 <p>Cole</p>
                 <p>Dept: Boss</p>
-                <p>Phone Number: 580-343-3284 </p>
+                <p>Phone Number: (580)-343-3284 </p>
                 <p>Email: 
-                  <a href="mailto:wa3445xy@go.minnstate.edu">Email</a>
+                  <a href="https://www.w3schools.com">Email</a>
                 </p>
               </div>
               <div class="ContactDiv">
               <p>Thomas</p>
               <p>Dept: HR</p>
-              <p>Phone Number: 507-478-9901 </p>
+              <p>Phone Number: (507)-478-9901 </p>
               <p>Email: 
                 <a href="https://www.w3schools.com">Email</a>
               </p>
@@ -77,13 +78,13 @@
               <div class="ContactDiv">
                <p>Allen</p>
                <p>Dept: Customer Service</p>
-              <p>Phone Number: 507-231-2334 </p>
+              <p>Phone Number: (507)-555-1234 </p>
               <p>Email: <a class="P4Link" href="https://www.w3schools.com">Email</a></p>
             </div>
             <div class="ContactDiv">
               <p>Annabelle</p>
               <p>Dept: Retail</p>
-              <p>Phone Number: 507-009-9009 </p>
+              <p>Phone Number: (507)-009-9009 </p>
               <p>Email: <a class="P4Link"  href="https://www.w3schools.com">Email</a></p>
             </div>
          </section>
@@ -93,24 +94,24 @@
                 <section class="FormPara">
                  
                   <div class="formDiv">
-                    <label> Customer Info </label>
-                    <input type="text" name="Client" placeholder="Enter Name">
+                    <label for="CustName"> Customer Info </label>
+                    <input id="CustName" type="text" placeholder="Enter Name">
                   </div>
                   <div class="formDiv">
-                    <label> Address </label>
-                    <input type="text" name="Address" placeholder="Enter Address">
+                    <label for="add"> Address </label>
+                    <input id="add" type="text" placeholder="Enter Address">
                   </div>
                   <div class="formDiv">
-                    <label> Phone Number </label>
-                    <input type="text" name="Phone Number" placeholder="Enter Phone Number (Optional)">
+                    <label for="PhnNumber"> Phone Number </label>
+                    <input id="PhnNumber" type="tel" placeholder="890-440-3289 (Optional)">
                   </div>
                   <div class="formDiv">
-                    <label> Personal Email </label>
-                    <input type="text" name="Email" placeholder="Enter Email">
+                    <label for="PerEmail"> Personal Email </label>
+                    <input id="PerEmail" type="email" placeholder="Ex: butter@gmail.com">
                   </div>
                   <div class="formDiv">
-                    <label> Department</label>
-                    <select name="Department">
+                    <label for="dept"> Department</label>
+                    <select id="dept">
                            <option>None</option>
                            <option>Customer Service</option>
                            <option>Retail</option>
@@ -118,21 +119,14 @@
                            <option>HR</option>
                     </select>
                   </div>
-                    <!-- 
-      <label>Status</label>
-                    <input type="radio" name="type" value="Pending "> Pending
-                    <input type="radio" name="type" value="Processing "> Processing
-                    <input type="radio" name="type" value="Shipped "> Shipped
-                    -->
+            
                     <div class="formDiv">
-                      <label>Description</label>
-                 
-                      <input class="DescriptionInputBox"type="text" name="Description" placeholder="Enter Text Here">
+                      <label for="dscption">Description (1000 Character Limit)</label>
+                      <textarea id="dscption" form="questionField" maxlength="1000"></textarea>
                     </div>
-                  
+
                     <div class="formDiv"> 
-                      <input class="submit" type="submit" onclick="myFunction()">
-                      
+                      <input type="submit" id="submitBtn">
                     </div>
                       
                 </section>
@@ -154,12 +148,9 @@
 
 
   <script src="../js/toggleNav.js"></script>
+  <script> src="../js/page4.js"</script>
 </body>
 
-<script>
-  function myFunction() {
-    window.location.href="submitted.html";  
-  }
-</script>
+
 
 </html>
