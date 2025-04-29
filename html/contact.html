@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/root.css">
+  <link rel="stylesheet" type="text/css" href="../css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Contact Us</title>
+
+  <!-- Updated Meta Tags -->
+  <meta name="description" content="Get in touch with Advanced Manufacturing for support, inquiries, or assistance through our contact form or department emails.">
+  <meta name="keywords" content="Contact Advanced Manufacturing, Customer Support, Company Contact Information, Submit Inquiry, Manufacturing Customer Service, HR Contact, Retail Department Help, Business Inquiry Form">
+  <meta name="author" content="Cole Graves">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <a class="skip-to-content-link" href="#content" tabindex="1">Skip to content</a>
+  <a class="skip-to-content-link" href="../html/accessibilty.html" tabindex="1">Accessibility Statement</a>
+
+  <nav class="nav-side">
+    <div class="side-scroll">
+      <div class="side-nav-search">
+        <img src="../media/Logo.jpg" class="logo" alt="Advanced Manufacturing">
+        <h1>Advanced Manufacturing</h1>
+      </div>
+    </div>
+
+    <div class="menu-vertical">
+      <ul>
+        <li class="nav-list"><a class="nav-link" href="home.html" tabindex="1">Home</a></li>
+        <li class="nav-list"><a class="nav-link" href="outsourcing.html" tabindex="1">Our Approach to Outsourcing</a></li>
+        <li class="nav-list"><a class="nav-link" href="faq.html" tabindex="1">FAQ</a></li>
+        <li class="nav-list"><a class="nav-link" href="../php/jobsearch.php" tabindex="1">Company Search</a></li>
+        <li class="nav-list"><a class="nav-link" href="contact.html" tabindex="1">Contact Us</a></li>
+        <li class="nav-list"><a class="nav-link" href="copyrightPage.html" tabindex="1">Copyright Page</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<main>
+  <section class="nav-content-wrap">
+    <div class="content-banner">
+      <button id="toggleNav" class="toggle-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+    </div>
+
+    
+      <form id="formID" action="submitted.html">
+        <fieldset>
+          <legend>Contact Form</legend>
+
+          <h1 class="ContactInfoHeader">Contact Info</h1>
+
+          <section id="gridSection">
+            <div class="ContactDiv">
+              <p>Cole</p>
+              <p>Dept: Boss</p>
+              <p>Phone Number: (580)-343-3284</p>
+              <p>Email: <a href="mailto:cole@example.com">Email</a></p>
+            </div>
+
+            <div class="ContactDiv">
+              <p>Thomas</p>
+              <p>Dept: HR</p>
+              <p>Phone Number: (507)-478-9901</p>
+              <p>Email: <a href="mailto:thomas@example.com">Email</a></p>
+            </div>
+
+            <div class="ContactDiv">
+              <p>Allen</p>
+              <p>Dept: Customer Service</p>
+              <p>Phone Number: (507)-555-1234</p>
+              <p>Email: <a href="mailto:allen@example.com">Email</a></p>
+            </div>
+
+            <div class="ContactDiv">
+              <p>Annabelle</p>
+              <p>Dept: Retail</p>
+              <p>Phone Number: (507)-009-9009</p>
+              <p>Email: <a href="mailto:annabelle@example.com">Email</a></p>
+            </div>
+          </section>
+
+          <p class="HeadFormThing"><b>Need Something Else? Submit a Form Below</b></p>
+
+          <section class="FormPara">
+            <div class="formDiv">
+              <label for="CustName">Customer Name <span class="required">*</span></label>
+              <input id="CustName" type="text" placeholder="Enter Name" required autocomplete="name">
+            </div>
+
+            <div class="formDiv">
+              <label for="add">Address</label>
+              <input id="add" type="text" placeholder="Enter Address" autocomplete="address-line1">
+            </div>
+
+            <div class="formDiv">
+              <label for="PhnNumber">Phone Number</label>
+              <input id="PhnNumber" type="tel" placeholder="890-440-3289 (Optional)" autocomplete="tel">
+            </div>
+
+            <div class="formDiv">
+              <label for="PerEmail">Personal Email <span class="required">*</span></label>
+              <input id="PerEmail" type="email" placeholder="Ex: butter@gmail.com" required autocomplete="email">
+            </div>
+
+            <div class="formDiv">
+              <label for="dept">Department</label>
+              <select id="dept" autocomplete="organization-title">
+                <option>None</option>
+                <option>Customer Service</option>
+                <option>Retail</option>
+                <option>Boss</option>
+                <option>HR</option>
+              </select>
+            </div>
+
+            <div class="formDiv">
+              <label for="dscption">Description (1000 Character Limit) <span class="required">*</span></label>
+              <textarea id="dscption" maxlength="1000" required autocomplete="off"></textarea>
+
+            </div>
+
+            <div class="formDiv">
+              <input type="submit" id="submitBtn" value="Submit">
+            </div>
+          </section>
+
+        </fieldset>
+      </form>
+
+    <footer>
+      <p>Copyright:
+        <a class="P4Links" href="copyrightPage.html">©2025, Advanced Manufacturing. All Rights Reserved.</a>
+      </p>
+    </footer>
+  </section>
+</main>
+  <script src="../js/toggleNav.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

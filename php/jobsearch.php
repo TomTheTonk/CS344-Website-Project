@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/page3.css">
+    <link rel="stylesheet" type="text/css" href="../css/jobsearch.css">
     <link rel="stylesheet" type="text/css" href="../css/root.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,7 +17,7 @@
 
 <body>
     <a class="skip-to-content-link" href="#content" tabindex="1">Skip to content</a>
-    <a class="skip-to-content-link" href="../html/page5.html" tabindex="1">Accessibility Statement</a>
+    <a class="skip-to-content-link" href="../html/accessibilty.html" tabindex="1">Accessibility Statement</a>
     <nav class="nav-side">
         <div class="side-scroll">
             <div class="side-nav-search">
@@ -30,11 +30,13 @@
         </div>
         <div class="menu-vertical">
             <ul>
-                <li class="nav-list"><a class="nav-link" href="../html/home.html" tabindex="1">Home</a></li>
-                <li class="nav-list"><a class="nav-link" href="../html/page1.html" tabindex="1">Our Approach to Outsourcing</a></li>
-                <li class="nav-list"><a class="nav-link" href="../html/page2.html" tabindex="1">FAQ</a></li>
-                <li class="nav-list"><a class="nav-link" href="page3.php" tabindex="1">Company Search</a></li>
-                <li class="nav-list"><a class="nav-link" href="../html/page4.html" tabindex="1">Contact Us</a></li>
+            <li class="nav-list"><a class="nav-link" href="home.html" tabindex="1">Home</a></li>
+        <li class="nav-list"><a class="nav-link" href="outsourcing.html" tabindex="1">Our Approach to
+            Outsourcing</a></li>
+        <li class="nav-list"><a class="nav-link" href="faq.html" tabindex="1">FAQ</a></li>
+        <li class="nav-list"><a class="nav-link" href="../php/jobsearch.php" tabindex="1">Company Search</a></li>
+        <li class="nav-list"><a class="nav-link" href="contact.html" tabindex="1">Contact Us</a></li>
+        <li class="nav-list"><a class="nav-link" href="copyrightPage.html" tabindex="1">Copyright Page</a></li>
             </ul>
 
         </div>
