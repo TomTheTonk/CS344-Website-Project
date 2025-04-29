@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const validation = [customer, email, description];
         const fieldNames = ["Customer Name", "Email", "Description"];
        
-        for(let i = 0; i < validation.length; i++ {
+        for(let i = 0; i < validation.length; i++) {
             if (validation[i].value.trim() == "") {
                 alert(`${fieldNames[i]} must be filled out`);
                 return false;
