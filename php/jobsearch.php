@@ -30,13 +30,13 @@
         </div>
         <div class="menu-vertical">
             <ul>
-            <li class="nav-list"><a class="nav-link" href="home.html" tabindex="1">Home</a></li>
-        <li class="nav-list"><a class="nav-link" href="outsourcing.html" tabindex="1">Our Approach to
+            <li class="nav-list"><a class="nav-link" href="../html/home.html" tabindex="1">Home</a></li>
+        <li class="nav-list"><a class="nav-link" href="../html/outsourcing.html" tabindex="1">Our Approach to
             Outsourcing</a></li>
-        <li class="nav-list"><a class="nav-link" href="faq.html" tabindex="1">FAQ</a></li>
-        <li class="nav-list"><a class="nav-link" href="../php/jobsearch.php" tabindex="1">Company Search</a></li>
-        <li class="nav-list"><a class="nav-link" href="contact.html" tabindex="1">Contact Us</a></li>
-        <li class="nav-list"><a class="nav-link" href="copyrightPage.html" tabindex="1">Copyright Page</a></li>
+        <li class="nav-list"><a class="nav-link" href="../html/faq.html" tabindex="1">FAQ</a></li>
+        <li class="nav-list"><a class="nav-link" href="jobsearch.php" tabindex="1">Company Search</a></li>
+        <li class="nav-list"><a class="nav-link" href="../html/contact.html" tabindex="1">Contact Us</a></li>
+        <li class="nav-list"><a class="nav-link" href="../html/copyrightPage.html" tabindex="1">Copyright Page</a></li>
             </ul>
 
         </div>
