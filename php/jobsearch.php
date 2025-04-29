@@ -3,7 +3,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/page3.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/jobsearch.css">
     <link rel="stylesheet" type="text/css" href="../css/root.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,7 +18,9 @@
 
 <body>
     <a class="skip-to-content-link" href="#content" tabindex="1">Skip to content</a>
-    <a class="skip-to-content-link" href="../html/page5.html" tabindex="1">Accessibility Statement</a>
+
+    <a class="skip-to-content-link" href="../html/accessibilty.html" tabindex="1">Accessibility Statement</a>
+
     <nav class="nav-side">
         <div class="side-scroll">
             <div class="side-nav-search">
@@ -30,11 +33,15 @@
         </div>
         <div class="menu-vertical">
             <ul>
-                <li class="nav-list"><a class="nav-link" href="../html/home.html" tabindex="1">Home</a></li>
-                <li class="nav-list"><a class="nav-link" href="../html/page1.html" tabindex="1">Our Approach to Outsourcing</a></li>
-                <li class="nav-list"><a class="nav-link" href="../html/page2.html" tabindex="1">FAQ</a></li>
-                <li class="nav-list"><a class="nav-link" href="page3.php" tabindex="1">Company Search</a></li>
-                <li class="nav-list"><a class="nav-link" href="../html/page4.html" tabindex="1">Contact Us</a></li>
+
+            <li class="nav-list"><a class="nav-link" href="../html/home.html" tabindex="1">Home</a></li>
+        <li class="nav-list"><a class="nav-link" href="../html/outsourcing.html" tabindex="1">Our Approach to
+            Outsourcing</a></li>
+        <li class="nav-list"><a class="nav-link" href="../html/faq.html" tabindex="1">FAQ</a></li>
+        <li class="nav-list"><a class="nav-link" href="jobsearch.php" tabindex="1">Company Search</a></li>
+        <li class="nav-list"><a class="nav-link" href="../html/contact.html" tabindex="1">Contact Us</a></li>
+        <li class="nav-list"><a class="nav-link" href="../html/copyrightPage.html" tabindex="1">Copyright Page</a></li>
+
             </ul>
 
         </div>
@@ -84,6 +91,7 @@
                     }
                 }
 
+
                 //Load XML
                 //$xml = simplexml_load_file("../xml/company_data.xml") or die("Error: Not Working");
                 //$company_count = $xml->count();
@@ -130,6 +138,7 @@
 
                 $company_count = count($company_array);
 
+
                 //Variables to determine how many for loop body for company display
                 if (isset($_GET['per_page']) && !empty($_GET['per_page'])) {
                     $per_page = $_GET['per_page'];
@@ -145,7 +154,9 @@
                 }
                 $left = true;
 
+
                 /*
+>
                 // Generates an array of all data in xml file
                 $company_xml = $xml->COMPANY;
                 $company_array = [];
@@ -169,7 +180,7 @@
                     array_push($company_array, $company_object);
                     $company_object->set_cost_plan($company->COST_PLAN);
                 }
-                */
+*/
 
                 $company_array = quickSort($company_array);
 

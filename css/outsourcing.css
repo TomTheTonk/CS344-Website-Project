@@ -1,0 +1,42 @@
+.content {
+    padding-top: 1em;
+}
+
+/* lists (pros and cons) styling */
+
+ul h1 {
+    margin-top: 0.5em;
+}
+
+li {
+    margin-left: 1em;
+}
+
+li p {
+    padding-left: 1em;
+}
+
+.pc-container ul {
+    padding-bottom: 0.5em;
+    border: 1px solid rgb(205, 212, 212);
+}
+
+.pc-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.pc-container > ul {
+    background-color: rgb(241, 245, 245);
+    padding: 1em;
+    width: 90%;
+    text-align: left;
+}
+
+.pro {
+    list-style-type: '\02795'; /* + */ 
+}
+
+.con {
+    list-style-type: "\2796"; /* - */
+}
