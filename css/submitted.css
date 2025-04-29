@@ -46,3 +46,63 @@ footer a {
     color: white;
 }
     */
+
+    @media only screen and (max-width: 768px) {
+        .nav-side {
+          position: absolute;
+          width: 175px;
+          z-index: 999;
+        }
+    
+        .nav-content-wrap {
+            margin-left: 0; 
+            transition: width .3s ease;
+            
+          }
+            
+        
+          .nav-side.collapsed {
+            transform: translateX(-100%); 
+            transition: width .0s ease;
+          }
+        
+          .nav-side {
+            transform: translateX(0); 
+            transition: width .0s ease;
+            position: fixed;
+        
+          }
+        /*This is the A Section, that holds the "Advanced Manu" thing */
+    
+          .side-nav-search{
+            background-color: white;
+            color: #343131;
+        }
+        .side-nav-search h1 {
+            font-size: 15px;
+            text-align: center;
+            padding-bottom: 1em;
+        }
+
+
+        .submitSection{
+          
+            padding-bottom: 50px;
+        }
+
+        h3 {
+            text-align: right;
+            font-weight: 900px;
+            font-size: 50;
+            padding-top: 0px;
+            padding-right: 10px;
+            margin-top: 5px;
+        }
+        
+        p {
+            text-align: right;
+            padding-right: 10px;
+            font-weight: 900px;
+        }
+
+    }
