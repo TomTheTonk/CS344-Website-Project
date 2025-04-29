@@ -1,0 +1,174 @@
+.nav-content-wrap .companys-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-content-wrap div.companys-content * {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-content-wrap div.companys-content .company-header {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.nav-content-wrap div.companys-content .company-section {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.companys-content {
+
+    padding: none;
+    --section-padding: .5em;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.companys-content .companys-list {
+    padding-left: 0;
+}
+
+.companys-list {
+    list-style-type: none;
+    margin-top: 0;
+}
+
+.company-details {
+    border-style: solid;
+    border-radius: 2em;
+    padding-bottom: .25em;
+    width: 41.5%;
+}
+
+.left {
+    margin-left: 5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.company-header {
+    font-size: 1.15em;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.company-link {
+    color: #343131;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.company-link:hover {
+    color: blue;
+}
+
+.company-section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    border-top: solid;
+}
+
+.section-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: .35em;
+}
+
+.sub-section-header {
+    font-weight: bold;
+    padding-bottom: .2em;
+}
+
+.section-body {
+    padding-top: .25em;
+}
+
+.checked {
+    color: orange;
+}
+
+.service-section-header {
+    font-weight: bold;
+    padding-top: .2em;
+    font-size: 1.1em
+}
+
+.no-bullet {
+    list-style-type: none;
+}
+
+.service-sub {
+    list-style-position: inside;
+}
+
+.pagination-section {
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+.pagination {
+    border: 0.1em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.page-selector {
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.pagination-page-current {
+    background-color: #515050;
+    color: white;
+}
+
+.pagination-page {
+    background-color: rgb(222, 222, 222);
+    color: #343131;
+}
+
+.pagination-page:hover {
+    background-color: lightgray;
+}
+
+.select-div {
+    float: inline-end;
+}
+
+.per-page-selector {
+    width: 3em;
+    height: 34px;
+    margin-bottom: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgb(222, 222, 222);
+    border: none;
+    border-radius: 0.5em;
+}
+
+.nav-content-wrap div.page-selector {
+    padding-right: 0;
+}
+
+.nav-content-wrap div.select-div {
+    padding-left: 0;
+}

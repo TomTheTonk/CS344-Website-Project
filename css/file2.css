@@ -1,12 +1,9 @@
-.content-banner {
-    padding: 25px;
-    background-color: black;
-    color: white;
-    margin-bottom: 0px;
-    font-size: 2em;
+.nav-content-wrap div { /* overrides style from root.css */
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-.nav-content-wrap div { /* overrides style from root.css */
+.nav-content-wrap main div { /* overrides style from root.css */
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -73,88 +70,3 @@
   .active:after {
     content: "\2796"; /* - */
 }
-
-/* form section */
-/*
-.questionForm {
-    padding: 2em 2em 1em 2em;
-}
-
-.questionForm h3 {
-    font-weight: bold;
-}
-
-input {
-    width: 20%;
-}
-
-.required {
-    padding: 5px;
-    color: red;
-}
-
-.button {
-    width: 10%;
-    color: black;
-}
-*/
-/* "add screenshot" button styling - decided not to use */
-/*
-#file-input {
-    padding-left: 0;
-}
-
-.file {
-    opacity: 0;
-    width: 0.1px;
-    height: 0.1px;
-    position: static;
-}
-
-.file-input label {
-    width: 100px;
-    height: 25px;
-    background-color: lightgray;
-    border: 1px solid darkslategray;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-}
-
-input:hover + label, input:focus + label {
-    background-color: darkgray;
-}
-*/
-/*
-#clearBtn {
-    background-color: rgb(247, 158, 148);
-    border: 1px solid maroon;
-    border-radius: 5px;
-}
-
-#clearBtn:hover {
-  background-color: lightcoral;
-}
-
-#clearBtn:focus {
-  box-shadow: red 0 0 0 3px;
-  outline: none;
-}
-
-#submitBtn {
-    background-color: rgb(139, 205, 139);
-    border: 1px solid green;
-    border-radius: 5px;
-}
-
-#submitBtn:hover {
-  background-color: darkseagreen;
-}
-
-#submitBtn:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-  outline: none;
-}
-*/
