@@ -5,8 +5,9 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../css/root.css">
 
+
   <link rel="stylesheet" type="text/css" href="../css/file4.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+"stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Contact Us</title>
   <!-- Use "Defer" to ensure that the script only runs after the DOM is ready-->
   <meta name="description" content="Contact Us Page">
@@ -45,11 +46,12 @@
 
   <section class="nav-content-wrap">
     <!--Use an id, as a class returns a collection instead of 1 single unique element-->
-    <header class="content-banner">
-      <button id="toggleNav" class="toggle-button">&#9776;</button> 
-    </header>
+    <div class="content-banner">
+      <button id="toggleNav" class="toggle-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+  </div>
 
-   
+
+   <main>
     
         <form id="formID" action="submitted.html">
           <fieldset>
@@ -133,7 +135,7 @@
             </fieldset>
           
     </form>
-
+    </main>
     <!-- This is the footer for the page-->
     <footer>
       <p>Copyright: <a class="P4Links" href="copyrightPage.html">©2025, Advanced Manufacturing. All Rights Reserved.</a></p>

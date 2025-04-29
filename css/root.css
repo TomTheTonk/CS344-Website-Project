@@ -183,10 +183,10 @@ li p {
         padding-right: 3em;
      
 }
-.content{
 
-    
-}
+
+iframe {
+    border: none;
 
 .skip-to-content-link {
     background: #e77e23;
